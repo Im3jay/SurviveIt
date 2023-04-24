@@ -37,7 +37,7 @@ class WelcomePage extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      'Code Simplicity',
+                      'SurviveIt',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.white,
@@ -65,7 +65,7 @@ class WelcomePage extends StatelessWidget {
                                   },
                                   child: Container(
                                       padding: EdgeInsets.all(20),
-                                      child: Text('Start Learning',
+                                      child: Text('Start Learning!',
                                           textAlign: TextAlign.center,
                                           style: TextStyle(
                                               fontSize: 20,
@@ -87,11 +87,10 @@ class WelcomePage extends StatelessWidget {
                                 MaterialPageRoute(
                                     builder: (context) => AboutUsPage()));
                           },
-
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(50)),
-                          color: Color(0xFF303F9F),
-                          padding: EdgeInsets.all(25),
+                          //shape: RoundedRectangleBorder(
+                              //borderRadius: BorderRadius.circular(50)),
+                          //color: Color(0xFF303F9F),
+                          //padding: EdgeInsets.all(25),
                           child: Text('About Us',
                               style: TextStyle(
                                   color: Colors.white,
@@ -106,7 +105,10 @@ class WelcomePage extends StatelessWidget {
                             fontSize: 16,
                             letterSpacing: 2,
                             wordSpacing: 2)),
-                    Text('Daniel Mark Florencio\nMikaela Mae Herrera',
+                    Text('Daniel Mark Florencio\n'
+                        'Mikaela Mae Herrera\n'
+                        'Shane Noprada\n'
+                        'Aarone Revilla',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           color: Colors.white,
