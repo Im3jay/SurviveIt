@@ -46,7 +46,8 @@ class WelcomePage extends StatelessWidget {
                     ),
                     SizedBox(height: 80),
                     Container(
-                        margin: EdgeInsets.only(left: 20, right: 20, bottom: 5),
+                        margin:
+                            EdgeInsets.only(left: 20, right: 20, bottom: 10),
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(50),
                             child: Material(
@@ -79,43 +80,61 @@ class WelcomePage extends StatelessWidget {
                                               color: Colors.white, width: 4))),
                                 )))),
                     Padding(
-                      padding: const EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(10),
                       child: ElevatedButton(
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => AboutUsPage()));
-                          },
-                          //shape: RoundedRectangleBorder(
-                              //borderRadius: BorderRadius.circular(50)),
-                          //color: Color(0xFF303F9F),
-                          //padding: EdgeInsets.all(25),
-                          child: Text('About Us',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold))),
-                    ),
-                    SizedBox(height: 10),
-                    Text('Developed by\n',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AboutUsPage()),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Color(0xFF303F9F),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 30, horizontal: 40),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                        ),
+                        child: Text(
+                          'Quiz',
+                          style: TextStyle(
                             color: Colors.white,
-                            fontSize: 16,
-                            letterSpacing: 2,
-                            wordSpacing: 2)),
-                    Text('Daniel Mark Florencio\n'
-                        'Mikaela Mae Herrera\n'
-                        'Shane Noprada\n'
-                        'Aarone Revilla',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18,
-                          letterSpacing: 2,
-                          wordSpacing: 2,
-                        )),
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => AboutUsPage()),
+                          );
+                        },
+                        style: ElevatedButton.styleFrom(
+                          primary: Color(0xFF303F9F),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 30, horizontal: 40),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                        ),
+                        child: Text(
+                          'About Us',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               )

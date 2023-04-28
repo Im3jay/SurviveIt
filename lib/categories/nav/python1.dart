@@ -161,7 +161,7 @@ while True:
         ),
         builder: (context, player) => Scaffold(
           appBar: AppBar(
-            title: Text(' Python Programming'),
+            title: Text(' First-Aid'),
             backgroundColor: Colors.indigoAccent.shade700,
           ),
           body: Container(
@@ -176,7 +176,435 @@ while True:
                   fit: BoxFit.cover,
                 ),
                 SizedBox(height: 10),
-                Text('Python Programming',
+                Text('What are the Equipment for First Aid?',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontSize: 25,
+                        fontFamily: 'Poppins',
+                        color: Colors.black,
+                        backgroundColor: Colors.transparent,
+                        fontWeight: FontWeight.bold)),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is used for a small adhesive strip with a gauze pad for covering small wounds.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It fastens bandages or gauze by acting as a pointy clasp.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is an instrument for determining temperature.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is a small portable light, uses batteries.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is a loosely woven cotton surgical dressing. You use the pin to keep it in place.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is a white drug used as a remedy for pain and fever.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is a salve or unguent for application to the skin.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is a small ball of cotton that can be used for a variety of purposes (such as removing makeup or cleaning a wound).',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is a cutting instrument having two blades whose cutting edges slide past each other',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 180,
+                        height: 180,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade600,
+                              offset: Offset(4.0, 4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            ),
+                            BoxShadow(
+                              color: Colors.white,
+                              offset: Offset(-4.0, -4.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 1.0,
+                            )
+                          ],
+                          image: DecorationImage(
+                            image: AssetImage('assets/image.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'It is something (such as a drug) that relieves pain.',
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Text('What are the Equipment for First Aid?',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 25,
@@ -206,7 +634,7 @@ while True:
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   padding: EdgeInsets.all(8),
                   child: Text(
-                      'Python is a high-level, general-purpose and a very popular programming language. Python programming language (latest Python 3) is being used in web development, Machine Learning applications, along with all cutting edge technology in Software Industry.\n\nPython Programming Language is very well suited for Beginners, also for experienced programmers with other programming languages like C++ and Java. ',
+                      'It is used for a small adhesive strip with a gauze pad for covering small wounds.',
                       style: TextStyle(
                         fontSize: 16,
                         fontFamily: 'Poppins',
@@ -246,7 +674,7 @@ while True:
                       borderRadius: BorderRadius.all(Radius.circular(10))),
                   padding: EdgeInsets.all(8),
                   child: Text(
-                      '- Born on January 31, 1956\n\n- Guido van Rossum is a noted Dutch computer programmer and author, better known for creating the ‘Python’ programming language that earned him the title of the "Benevolent Dictator for Life" (BDFL).\n\n- He worked at several research institutes, such as the Corporation for National Research Initiatives (CNRI), the US National Institute of Standards and Technology (NIST), and the Centrum Wiskunde & Informatica (CWI) in the Netherlands.',
+                      'It fastens bandages or gauze by acting as a pointy clasp.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
                         fontSize: 16,
