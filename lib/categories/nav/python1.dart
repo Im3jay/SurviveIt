@@ -161,1127 +161,1104 @@ while True:
         ),
         builder: (context, player) => Scaffold(
           appBar: AppBar(
-            title: Text(' First-Aid'),
-            backgroundColor: Colors.indigoAccent.shade700,
+            title: const Text(' First-Aid'),
+            centerTitle: true,
+            backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
           ),
-          body: Container(
-            child: ListView(
-              physics: BouncingScrollPhysics(),
-              padding: EdgeInsets.all(16),
-              children: <Widget>[
-                Image.asset(
-                  'images/Welcome2.jpg',
-                  width: 500,
-                  height: 80,
-                  fit: BoxFit.cover,
-                ),
-                SizedBox(height: 10),
-                Text('What are the Equipment for First Aid?',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        fontSize: 25,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                        fontWeight: FontWeight.bold)),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is used for a small adhesive strip with a gauze pad for covering small wounds.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It fastens bandages or gauze by acting as a pointy clasp.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is an instrument for determining temperature.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is a small portable light, uses batteries.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is a loosely woven cotton surgical dressing. You use the pin to keep it in place.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is a white drug used as a remedy for pain and fever.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is a salve or unguent for application to the skin.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is a small ball of cotton that can be used for a variety of purposes (such as removing makeup or cleaning a wound).',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is a cutting instrument having two blades whose cutting edges slide past each other',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(10),
-                  child: Row(
-                    children: [
-                      Container(
-                        width: 180,
-                        height: 180,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.shade600,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            ),
-                            BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 15.0,
-                              spreadRadius: 1.0,
-                            )
-                          ],
-                          image: DecorationImage(
-                            image: AssetImage('assets/image.png'),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Expanded(
-                        child: Container(
-                          child: Text(
-                            'It is something (such as a drug) that relieves pain.',
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Text('What are the Equipment for First Aid?',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        fontSize: 25,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                        fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'It is used for a small adhesive strip with a gauze pad for covering small wounds.',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        letterSpacing: .5,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 25),
-                Text('The Developer',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                        fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'It fastens bandages or gauze by acting as a pointy clasp.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        //letterSpacing: 1,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 20),
-                Text('Why should you learn Python?',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        fontSize: 22,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                        fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'Python is highly scalable and extensible. This flexibility of Python allows you to perform cross-language operations without any hassle.\n\nThe programming language comes with the choicest assortment of libraries that come in handy for development and Data Science tasks. It has NumPy, SciPy, Scikit-Learn, Matplotlib, Pandas, StatsModels, and so much more.\n\nPython has something for every need. It packs in plenty of options for data visualization.\n\nPython is not just a programming language, it can be used for scripting too! The feature that sets scripting languages apart from programming languages is that scripting languages don’t require any compilation; they are directly interpreted.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.lightBlue.shade900,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      // maximumSize: Size(90, 80),
-                      elevation: 10,
-                      padding: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 0,
-                      ),
-                      textStyle: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 20,
-                      ),
-                    ),
-                    icon: Icon(
-                      Icons.download,
-                      size: 22,
-                    ),
-                    label: Text("Python Installation"),
-                    onPressed: () {
-                      const python_install =
-                          'https://www.python.org/downloads/';
-
-                      launch(python_install);
-                    }),
-                SizedBox(height: 50),
-                Text(
-                  ' What is Python?',
+          body: ListView(
+            shrinkWrap: true,
+            physics: const BouncingScrollPhysics(),
+            padding: const EdgeInsets.all(16),
+            children: <Widget>[
+              
+              const Text('What are the Equipment for First Aid?',
                   textAlign: TextAlign.left,
                   style: TextStyle(
-                    fontSize: 22,
-                    fontFamily: 'Poppins',
-                    letterSpacing: 1,
-                    color: Colors.black,
-                    backgroundColor: Colors.transparent,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      fontSize: 25,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                      fontWeight: FontWeight.bold)),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        // image: DecorationImage(
+                        //   image: AssetImage('assets/image.png'),
+                        //   fit: BoxFit.cover,
+                        // ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is used for a small adhesive strip with a gauze pad for covering small wounds.',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
                 ),
-                Text(
-                  ' by Programming with Mosh',
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        // image: DecorationImage(
+                        //   image: AssetImage('assets/image.png'),
+                        //   fit: BoxFit.cover,
+                        // ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It fastens bandages or gauze by acting as a pointy clasp.',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image.png'),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is an instrument for determining temperature.',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        // image: DecorationImage(
+                        //   image: AssetImage('assets/image.png'),
+                        //   fit: BoxFit.cover,
+                        // ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is a small portable light, uses batteries.',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        // image: DecorationImage(
+                        //   image: AssetImage('assets/image.png'),
+                        //   fit: BoxFit.cover,
+                        // ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is a loosely woven cotton surgical dressing. You use the pin to keep it in place.',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        // image: DecorationImage(
+                        //   image: AssetImage('assets/image.png'),
+                        //   fit: BoxFit.cover,
+                        // ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is a white drug used as a remedy for pain and fever.',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        // image: DecorationImage(
+                        //   image: AssetImage('assets/image.png'),
+                        //   fit: BoxFit.cover,
+                        // ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is a salve or unguent for application to the skin.',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image.png'),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is a small ball of cotton that can be used for a variety of purposes (such as removing makeup or cleaning a wound).',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image.png'),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Expanded(
+                      child: Text(
+                        'It is a cutting instrument having two blades whose cutting edges slide past each other',
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10),
+                child: Row(
+                  children: [
+                    Container(
+                      width: 180,
+                      height: 180,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey.shade600,
+                            offset: const Offset(4.0, 4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          ),
+                          const BoxShadow(
+                            color: Colors.white,
+                            offset: Offset(-4.0, -4.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 1.0,
+                          )
+                        ],
+                        image: const DecorationImage(
+                          image: AssetImage('assets/image.png'),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Container(
+                        child: const Text(
+                          'It is something (such as a drug) that relieves pain.',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Text('What are the Equipment for First Aid?',
                   textAlign: TextAlign.left,
                   style: TextStyle(
-                    fontSize: 16,
-                    letterSpacing: 1,
-                    fontFamily: 'Poppins',
-                    color: Colors.black,
-                    backgroundColor: Colors.transparent,
-                    // fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: 10),
-                player,
-                SizedBox(height: 10),
-                ElevatedButton.icon(
+                      fontSize: 25,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                      fontWeight: FontWeight.bold)),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'It is used for a small adhesive strip with a gauze pad for covering small wounds.',
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      letterSpacing: .5,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 25),
+              const Text('The Developer',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                      fontWeight: FontWeight.bold)),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.grey),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'It fastens bandages or gauze by acting as a pointy clasp.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16,
+                      //letterSpacing: 1,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 20),
+              const Text('Why should you learn Python?',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 22,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                      fontWeight: FontWeight.bold)),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'Python is highly scalable and extensible. This flexibility of Python allows you to perform cross-language operations without any hassle.\n\nThe programming language comes with the choicest assortment of libraries that come in handy for development and Data Science tasks. It has NumPy, SciPy, Scikit-Learn, Matplotlib, Pandas, StatsModels, and so much more.\n\nPython has something for every need. It packs in plenty of options for data visualization.\n\nPython is not just a programming language, it can be used for scripting too! The feature that sets scripting languages apart from programming languages is that scripting languages don’t require any compilation; they are directly interpreted.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.redAccent.shade700,
+                    primary: Colors.lightBlue.shade900,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
                     // maximumSize: Size(90, 80),
                     elevation: 10,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 0,
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 20,
                     ),
                   ),
-                  icon: Icon(
-                    Icons.play_arrow_sharp,
+                  icon: const Icon(
+                    Icons.download,
                     size: 22,
                   ),
-                  label: Text("Play / Pause"),
+                  label: const Text("Python Installation"),
                   onPressed: () {
-                    //controller.toggleFullScreenMode();
-                    if (controller.value.isPlaying) {
-                      controller.pause();
-                    } else {
-                      controller.play();
-                    }
-                  },
-                ),
-                SizedBox(height: 20),
-                Text(' What is an IDE?',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        letterSpacing: 1,
-                        fontSize: 20,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                        fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'An IDE, or Integrated Development Environment, enables programmers to consolidate the different aspects of writing a computer program.\n\nIDEs increase programmer productivity by combining common activities of writing software into a single application: editing source code, building executables, and debugging.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        letterSpacing: .5,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 20),
-                Text(' PyCharm',
-                    textAlign: TextAlign.left,
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontFamily: 'Poppins',
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                        fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'PyCharm is an integrated development environment used specifically for the Python language developed by the Czech company JetBrains in 2010.\n\nPyCharm is one of the most popular Python IDEs. There is a multitude of reasons for this, including the fact that it is developed by JetBrains, the developer behind the popular IntelliJ IDEA IDE that is one of the big 3 of Java IDEs and the “smartest JavaScript IDE” WebStorm. ',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        letterSpacing: .5,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.lightBlue.shade900,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      // maximumSize: Size(90, 80),
-                      elevation: 10,
-                      padding: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 0,
-                      ),
-                      textStyle: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 20,
-                      ),
-                    ),
-                    icon: Icon(
-                      Icons.download,
-                      size: 22,
-                    ),
-                    label: Text("Download PyCharm"),
-                    onPressed: () {
-                      const pycharm_install =
-                          'https://www.jetbrains.com/pycharm/download/#section=windows';
+                    const python_install =
+                        'https://www.python.org/downloads/';
 
-                      launch(pycharm_install);
-                    }),
-                SizedBox(height: 50),
-                Text('Fundamentals',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: 25,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        letterSpacing: 1,
-                        backgroundColor: Colors.transparent,
-                        fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
-                Text(' Variables',
+                    launch(python_install);
+                  }),
+              const SizedBox(height: 50),
+              const Text(
+                ' What is Python?',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontSize: 22,
+                  fontFamily: 'Poppins',
+                  letterSpacing: 1,
+                  color: Colors.black,
+                  backgroundColor: Colors.transparent,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              const Text(
+                ' by Programming with Mosh',
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                  fontSize: 16,
+                  letterSpacing: 1,
+                  fontFamily: 'Poppins',
+                  color: Colors.black,
+                  backgroundColor: Colors.transparent,
+                  // fontWeight: FontWeight.bold,
+                ),
+              ),
+              const SizedBox(height: 10),
+              player,
+              const SizedBox(height: 10),
+              ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.redAccent.shade700,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  // maximumSize: Size(90, 80),
+                  elevation: 10,
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 0,
+                  ),
+                  textStyle: const TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 20,
+                  ),
+                ),
+                icon: const Icon(
+                  Icons.play_arrow_sharp,
+                  size: 22,
+                ),
+                label: const Text("Play / Pause"),
+                onPressed: () {
+                  //controller.toggleFullScreenMode();
+                  if (controller.value.isPlaying) {
+                    controller.pause();
+                  } else {
+                    controller.play();
+                  }
+                },
+              ),
+              const SizedBox(height: 20),
+              const Text(' What is an IDE?',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      letterSpacing: 1,
+                      fontSize: 20,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                      fontWeight: FontWeight.bold)),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.grey),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'An IDE, or Integrated Development Environment, enables programmers to consolidate the different aspects of writing a computer program.\n\nIDEs increase programmer productivity by combining common activities of writing software into a single application: editing source code, building executables, and debugging.',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 16,
                       fontFamily: 'Poppins',
-                      letterSpacing: 1,
-                      fontWeight: FontWeight.bold,
+                      letterSpacing: .5,
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'Variables are used to save values into memory using a name that we assign.',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' Data Types',
+              ),
+              const SizedBox(height: 20),
+              const Text(' PyCharm',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontFamily: 'Poppins',
+                      letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                      fontWeight: FontWeight.bold)),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.grey),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'PyCharm is an integrated development environment used specifically for the Python language developed by the Czech company JetBrains in 2010.\n\nPyCharm is one of the most popular Python IDEs. There is a multitude of reasons for this, including the fact that it is developed by JetBrains, the developer behind the popular IntelliJ IDEA IDE that is one of the big 3 of Java IDEs and the “smartest JavaScript IDE” WebStorm. ',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
+                      fontSize: 16,
                       fontFamily: 'Poppins',
-                      fontSize: 18,
-                      letterSpacing: 1,
-                      fontWeight: FontWeight.bold,
+                      letterSpacing: .5,
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'Data types are the different kinds of data that we can store in a variable. Unlike many other languages, Python does not place a strong emphasis on defining the data type of an object, which makes coding much simpler.\n\nThe three main data types:\n1. Numbers (Integer and Floating Point)\n2. Strings\n3. Booleans',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.black,
-                        fontFamily: 'Poppins',
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' INTEGER',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 18,
+              ),
+              const SizedBox(height: 10),
+              ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.lightBlue.shade900,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    // maximumSize: Size(90, 80),
+                    elevation: 10,
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 0,
+                    ),
+                    textStyle: const TextStyle(
                       fontFamily: 'Poppins',
-                      letterSpacing: 1,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue[900],
-                      backgroundColor: Colors.transparent,
-                    )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'The integer data type is comprised of all the positive and negative whole numbers.\n\nEx.\n  num1 = 40\n  print(num1)',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' FLOATING POINT',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 20,
+                    ),
+                  ),
+                  icon: const Icon(
+                    Icons.download,
+                    size: 22,
+                  ),
+                  label: const Text("Download PyCharm"),
+                  onPressed: () {
+                    const pycharm_install =
+                        'https://www.jetbrains.com/pycharm/download/#section=windows';
+
+                    launch(pycharm_install);
+                  }),
+              const SizedBox(height: 50),
+              const Text('Fundamentals',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontSize: 25,
                       fontFamily: 'Poppins',
+                      color: Colors.black,
                       letterSpacing: 1,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
-                    )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'Floating-point numbers, or floats, refer to positive and negative decimal numbers.\n\nEx.\n  num2 = 3.14\n  print(num2)',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' STRING',
-                    textAlign: TextAlign.center,
+                      fontWeight: FontWeight.bold)),
+              const SizedBox(height: 10),
+              const Text(' Variables',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    letterSpacing: 1,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.grey),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'Variables are used to save values into memory using a name that we assign.',
                     style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
                       fontFamily: 'Poppins',
-                      letterSpacing: 1,
-                      color: Colors.blue[900],
-                      backgroundColor: Colors.transparent,
-                    )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'A string is a collection of characters closed within single, double or triple quotation marks.\n\nEx.\n  my_course = "Computer Science"\n  print(my_course)',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        letterSpacing: .5,
-                        fontSize: 16,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' BOOLEAN',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontFamily: 'Poppins',
-                      letterSpacing: 1,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.blue[900],
-                      backgroundColor: Colors.transparent,
-                    )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'A boolean values is either True or False, just like the value of a conditional expression after it has been evaluated.\n\nEx.\n  is_cold = False\n  print("Is it cold today?",is_cold)',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' Arithmetic Operators',
-                    textAlign: TextAlign.justify,
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 2,
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'Arithmetic operators are used to perform different mathematical operations.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      '            NAME               OPERATOR\n           Addition       -        (+)\n      Subtraction       -        (-)\n   Multiplication       -        (*)\n            Division       -        (/)\n           Modulus       -        (%)\n Exponentiation       -        (**)\n   Floor Division       -        (//)',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16.5,
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
+              ),
+              const SizedBox(height: 10),
+              const Text(' Data Types',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontSize: 18,
+                    letterSpacing: 1,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'Data types are the different kinds of data that we can store in a variable. Unlike many other languages, Python does not place a strong emphasis on defining the data type of an object, which makes coding much simpler.\n\nThe three main data types:\n1. Numbers (Integer and Floating Point)\n2. Strings\n3. Booleans',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.black,
+                      fontFamily: 'Poppins',
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Text(' INTEGER',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    letterSpacing: 1,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue[900],
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'The integer data type is comprised of all the positive and negative whole numbers.\n\nEx.\n  num1 = 40\n  print(num1)',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Text(' FLOATING POINT',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    letterSpacing: 1,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue[900],
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'Floating-point numbers, or floats, refer to positive and negative decimal numbers.\n\nEx.\n  num2 = 3.14\n  print(num2)',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 16,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Text(' STRING',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: 'Poppins',
+                    letterSpacing: 1,
+                    color: Colors.blue[900],
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'A string is a collection of characters closed within single, double or triple quotation marks.\n\nEx.\n  my_course = "Computer Science"\n  print(my_course)',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      letterSpacing: .5,
+                      fontSize: 16,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Text(' BOOLEAN',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    letterSpacing: 1,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue[900],
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'A boolean values is either True or False, just like the value of a conditional expression after it has been evaluated.\n\nEx.\n  is_cold = False\n  print("Is it cold today?",is_cold)',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              const Text(' Arithmetic Operators',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    border: Border.all(color: Colors.black, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'Arithmetic operators are used to perform different mathematical operations.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    '            NAME               OPERATOR\n           Addition       -        (+)\n      Subtraction       -        (-)\n   Multiplication       -        (*)\n            Division       -        (/)\n           Modulus       -        (%)\n Exponentiation       -        (**)\n   Floor Division       -        (//)',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 16.5,
+                      letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text('''
 Examples for Arithmetic Operators
 
 #Addition Operator
@@ -1306,81 +1283,81 @@ print(3 ** 3)
 #Floor Division operator
 print(36 // 8)
 ''',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16.5,
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' Comparison Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
-                      fontSize: 18,
                       fontFamily: 'Poppins',
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 2,
+                      fontSize: 16.5,
+                      letterSpacing: 1,
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'Comparison operators compare two values and indicate the difference between them. They return either a True or False value.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        //letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
-            NAME                     OPERATOR
+              ),
+              const SizedBox(height: 10),
+              const Text(' Comparison Operators',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    border: Border.all(color: Colors.black, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'Comparison operators compare two values and indicate the difference between them. They return either a True or False value.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      //letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text('''
+          NAME                     OPERATOR
   Equal                           -      (==) 
   Not Equal                     -      (!=)
   Greater Than                -      (>) 
@@ -1388,37 +1365,37 @@ print(36 // 8)
   Greater Than or Equal   -     (>=)
   Less Than or Equal        -     (<=)
   ''',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16.5,
-                        fontFamily: 'Poppins',
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16.5,
+                      fontFamily: 'Poppins',
+                      letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text('''
 Examples for Comparison Operators
 
 #Equal Operator
@@ -1452,112 +1429,112 @@ y = 11
 print(x <= y)
 
 ''',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16.5,
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' Logical Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 2,
                       fontFamily: 'Poppins',
+                      fontSize: 16.5,
+                      letterSpacing: 1,
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'Logical operators are used to combine conditional statements.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16,
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'AND Operator - this operator checks if both statements are true. \n\nOR Operator - this operator checks if only one of the statements is true.\n\nNOT Operator - this operator returns the opposite of whatever the current values is.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16.5,
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
+              ),
+              const SizedBox(height: 10),
+              const Text(' Logical Operators',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                    fontFamily: 'Poppins',
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    border: Border.all(color: Colors.black, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'Logical operators are used to combine conditional statements.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 16,
+                      letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'AND Operator - this operator checks if both statements are true. \n\nOR Operator - this operator checks if only one of the statements is true.\n\nNOT Operator - this operator returns the opposite of whatever the current values is.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 16.5,
+                      letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text('''
 Examples for Logical Operators
 
 #AND operator (both correct)
@@ -1572,112 +1549,112 @@ print(x > 40 or x < 40)
 x = 57
 print(not(x > 2 and x < 400))
 ''',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16.5,
-                        letterSpacing: 0.5,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Text(' Coditional Statements',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
-                      fontSize: 18,
                       fontFamily: 'Poppins',
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 2,
+                      fontSize: 16.5,
+                      letterSpacing: 0.5,
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'A conditional statement is a Boolean expression that, if True, executes a piece of code.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontFamily: 'Poppins',
-                        //letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 10),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
-                      'IF statement - this is used for decision-making operations. \n\nELSE statement - this provides an alternative solution in case both the IF and ELIF are False.\n\nELIF statement - short for else if, this gives an alternate condition so that the code can have another chance to run.',
-                      textAlign: TextAlign.justify,
-                      style: TextStyle(
-                        fontSize: 16.5,
-                        fontFamily: 'Poppins',
-                        letterSpacing: 1,
-                        color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 15),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
+              ),
+              const SizedBox(height: 10),
+              const Text(' Coditional Statements',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2,
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                  )),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    border: Border.all(color: Colors.black, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'A conditional statement is a Boolean expression that, if True, executes a piece of code.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontFamily: 'Poppins',
+                      //letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 10),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text(
+                    'IF statement - this is used for decision-making operations. \n\nELSE statement - this provides an alternative solution in case both the IF and ELIF are False.\n\nELIF statement - short for else if, this gives an alternate condition so that the code can have another chance to run.',
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontSize: 16.5,
+                      fontFamily: 'Poppins',
+                      letterSpacing: 1,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 15),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(8),
+                child: const Text('''
 Examples for Conditional Statements
 
 #IF statement
@@ -1701,176 +1678,175 @@ elif food_cost == 400:
 elif food_cost < 400:
     print("3. I will buy iced tea.")
 ''',
-                      textAlign: TextAlign.justify,
+                    textAlign: TextAlign.justify,
+                    style: TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 16.5,
+                      letterSpacing: 0.5,
+                      color: Colors.black,
+                      backgroundColor: Colors.transparent,
+                    )),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton.icon(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.lightBlue.shade900,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    // maximumSize: Size(90, 80),
+                    elevation: 10,
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 10,
+                      horizontal: 0,
+                    ),
+                    textStyle: const TextStyle(
+                      fontFamily: 'Poppins',
+                      fontSize: 20,
+                    ),
+                  ),
+                  icon: const Icon(
+                    Icons.web,
+                    size: 22,
+                  ),
+                  label: const Text("Python Online Compiler"),
+                  onPressed: () {
+                    const python_gdb =
+                        'https://www.onlinegdb.com/online_python_compiler';
+
+                    launch(python_gdb);
+                  }),
+              const SizedBox(height: 20),
+              const Text('Sample Source Code',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontFamily: 'Poppins',
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                    fontWeight: FontWeight.bold,
+                  )),
+              buildCard(
+                ' SIMPLE CALCULATOR',
+              ),
+              buildCard2(
+                ' LOAN PAYMENT CALCULATOR',
+              ),
+              const SizedBox(height: 20),
+              const Text('Python Online Courses',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 25,
+                    fontFamily: 'Poppins',
+                    color: Colors.black,
+                    backgroundColor: Colors.transparent,
+                    fontWeight: FontWeight.bold,
+                  )),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.shade600,
+                        offset: const Offset(4.0, 4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      ),
+                      const BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(-4.0, -4.0),
+                        blurRadius: 15.0,
+                        spreadRadius: 1.0,
+                      )
+                    ],
+                    //border: Border.all(color: Colors.blue, width: 2),
+                    borderRadius: const BorderRadius.all(Radius.circular(10))),
+                padding: const EdgeInsets.all(30),
+                child: RichText(
+                    text: TextSpan(children: [
+                  const TextSpan(
                       style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontSize: 16.5,
-                        letterSpacing: 0.5,
                         color: Colors.black,
-                        backgroundColor: Colors.transparent,
-                      )),
-                ),
-                SizedBox(height: 20),
-                ElevatedButton.icon(
-                    style: ElevatedButton.styleFrom(
-                      primary: Colors.lightBlue.shade900,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                      ),
-                      // maximumSize: Size(90, 80),
-                      elevation: 10,
-                      padding: EdgeInsets.symmetric(
-                        vertical: 10,
-                        horizontal: 0,
-                      ),
-                      textStyle: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1,
                         fontFamily: 'Poppins',
-                        fontSize: 20,
+                        // letterSpacing: 1,
+
+                        backgroundColor: Colors.transparent,
                       ),
-                    ),
-                    icon: Icon(
-                      Icons.web,
-                      size: 22,
-                    ),
-                    label: Text("Python Online Compiler"),
-                    onPressed: () {
-                      const python_gdb =
-                          'https://www.onlinegdb.com/online_python_compiler';
-
-                      launch(python_gdb);
-                    }),
-                SizedBox(height: 20),
-                Text('Sample Source Code',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Poppins',
-                      color: Colors.black,
-                      backgroundColor: Colors.transparent,
-                      fontWeight: FontWeight.bold,
-                    )),
-                buildCard(
-                  ' SIMPLE CALCULATOR',
-                ),
-                buildCard2(
-                  ' LOAN PAYMENT CALCULATOR',
-                ),
-                SizedBox(height: 20),
-                Text('Python Online Courses',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Poppins',
-                      color: Colors.black,
-                      backgroundColor: Colors.transparent,
-                      fontWeight: FontWeight.bold,
-                    )),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        ),
-                        BoxShadow(
-                          color: Colors.white,
-                          offset: Offset(-4.0, -4.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 1.0,
-                        )
-                      ],
-                      //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(30),
-                  child: RichText(
-                      text: TextSpan(children: [
-                    TextSpan(
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1,
-                          fontFamily: 'Poppins',
-                          // letterSpacing: 1,
-
-                          backgroundColor: Colors.transparent,
-                        ),
-                        text: "Coursera\n"),
-                    TextSpan(
-                        style: TextStyle(
-                          color: Colors.blue, fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1,
-                          fontFamily: 'Poppins',
-                          // letterSpacing: 1,
-                          backgroundColor: Colors.transparent,
-                        ),
-                        text: "1. Python for Everybody Specialization\n",
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () {
-                            final String course =
-                                "https://www.coursera.org/specializations/python";
-                            launch(course);
-                          }),
-                    TextSpan(
-                        style: TextStyle(
-                          color: Colors.blue, fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1,
-                          fontFamily: 'Poppins',
-                          // letterSpacing: 1,
-                          backgroundColor: Colors.transparent,
-                        ),
-                        text:
-                            "2. Applied Data Science with Python Specialization\n",
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () {
-                            final String course2 =
-                                "https://www.coursera.org/specializations/data-science-python";
-                            launch(course2);
-                          }),
-                    TextSpan(
-                        style: TextStyle(
-                          color: Colors.blue, fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1,
-                          fontFamily: 'Poppins',
-                          // letterSpacing: 1,
-                          backgroundColor: Colors.transparent,
-                        ),
-                        text: "3. Python for Data Science, AI & Development\n",
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () {
-                            final String course3 =
-                                "https://www.coursera.org/learn/python-for-applied-data-science-ai";
-                            launch(course3);
-                          }),
-                  ])),
-                ),
-              ],
-            ),
+                      text: "Coursera\n"),
+                  TextSpan(
+                      style: const TextStyle(
+                        color: Colors.blue, fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1,
+                        fontFamily: 'Poppins',
+                        // letterSpacing: 1,
+                        backgroundColor: Colors.transparent,
+                      ),
+                      text: "1. Python for Everybody Specialization\n",
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          final String course =
+                              "https://www.coursera.org/specializations/python";
+                          launch(course);
+                        }),
+                  TextSpan(
+                      style: const TextStyle(
+                        color: Colors.blue, fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1,
+                        fontFamily: 'Poppins',
+                        // letterSpacing: 1,
+                        backgroundColor: Colors.transparent,
+                      ),
+                      text:
+                          "2. Applied Data Science with Python Specialization\n",
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          final String course2 =
+                              "https://www.coursera.org/specializations/data-science-python";
+                          launch(course2);
+                        }),
+                  TextSpan(
+                      style: const TextStyle(
+                        color: Colors.blue, fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1,
+                        fontFamily: 'Poppins',
+                        // letterSpacing: 1,
+                        backgroundColor: Colors.transparent,
+                      ),
+                      text: "3. Python for Data Science, AI & Development\n",
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          final String course3 =
+                              "https://www.coursera.org/learn/python-for-applied-data-science-ai";
+                          launch(course3);
+                        }),
+                ])),
+              ),
+            ],
           ),
           backgroundColor: Colors.white,
         ),
       );
 
   Widget buildCard(String title) => Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints.tightForFinite(width: 50),
+          constraints: const BoxConstraints.tightForFinite(width: 50),
           decoration: BoxDecoration(
               color: Colors.grey[300],
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.shade600,
-                  offset: Offset(4.0, 4.0),
+                  offset: const Offset(4.0, 4.0),
                   blurRadius: 15.0,
                   spreadRadius: 1.0,
                 ),
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.white,
                   offset: Offset(-4.0, -4.0),
                   blurRadius: 15.0,
@@ -1878,16 +1854,16 @@ elif food_cost < 400:
                 )
               ],
               //border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              borderRadius: const BorderRadius.all(Radius.circular(10))),
           child: Card(
             clipBehavior: Clip.antiAlias,
             child: Column(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ExpandablePanel(
-                  theme: ExpandableThemeData(
+                  theme: const ExpandableThemeData(
                     expandIcon: Icons.arrow_downward,
                     collapseIcon: Icons.arrow_upward,
                     tapBodyToCollapse: true,
@@ -1895,7 +1871,7 @@ elif food_cost < 400:
                   ),
                   header: Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 19,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1,
@@ -1904,7 +1880,7 @@ elif food_cost < 400:
                   ),
                   collapsed: Text(
                     expanded_text,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       letterSpacing: 1,
                       fontFamily: 'Poppins',
@@ -1915,7 +1891,7 @@ elif food_cost < 400:
                   ),
                   expanded: Text(
                     List.generate(1, (_) => expanded_text).join('\n\n'),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       letterSpacing: 1,
                       fontFamily: 'Poppins',
@@ -1935,19 +1911,19 @@ elif food_cost < 400:
         ),
       );
   Widget buildCard2(String title) => Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints.tightForFinite(width: 50),
+          constraints: const BoxConstraints.tightForFinite(width: 50),
           decoration: BoxDecoration(
               color: Colors.grey[300],
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.shade600,
-                  offset: Offset(4.0, 4.0),
+                  offset: const Offset(4.0, 4.0),
                   blurRadius: 15.0,
                   spreadRadius: 1.0,
                 ),
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.white,
                   offset: Offset(-4.0, -4.0),
                   blurRadius: 15.0,
@@ -1955,10 +1931,10 @@ elif food_cost < 400:
                 )
               ],
               //border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              borderRadius: const BorderRadius.all(Radius.circular(10))),
           child: Card(
             child: ExpandablePanel(
-              theme: ExpandableThemeData(
+              theme: const ExpandableThemeData(
                 expandIcon: Icons.arrow_downward,
                 collapseIcon: Icons.arrow_upward,
                 tapBodyToCollapse: true,
@@ -1966,7 +1942,7 @@ elif food_cost < 400:
               ),
               header: Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 19,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1,
@@ -1975,7 +1951,7 @@ elif food_cost < 400:
               ),
               collapsed: Text(
                 expanded_text2,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',
@@ -1986,7 +1962,7 @@ elif food_cost < 400:
               ),
               expanded: Text(
                 List.generate(1, (_) => expanded_text2).join('\n\n'),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',

@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
-
 class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: prefer_const_declarations
     return Scaffold(
         appBar: AppBar(
-          title: Text('About Us'),
-          backgroundColor: Colors.indigoAccent.shade700,
+          title: const Text('About Us'),
+          centerTitle: true,
+          backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
         ),
         body: SingleChildScrollView(
             child: Stack(children: <Widget>[
@@ -19,42 +18,55 @@ class AboutUsPage extends StatelessWidget {
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    SizedBox(height: 40),
-                    Image.asset('images/banner.jpg'),
-                    SizedBox(height: 5),
+                    Image.asset(
+                      'images/about/developers.png',
+                      width: 300,
+                      height: 300,
+                    ),
                     Container(
-                      padding: const EdgeInsets.all(20.0),
+                      padding: const EdgeInsets.all(35.0),
                       child: Column(
                         children: <Widget>[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: <Widget>[],
+                          Container(
+                            padding: const EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(255, 205, 147, 1),
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            child: const Text(
+                              '   The Developers                                   ',
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
                           ),
-                          SizedBox(height: 40),
+                          
+                          const SizedBox(height: 40),
                           Column(
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     radius: 35,
-                                    backgroundImage: NetworkImage(
-                                        'https://source.unsplash.com/random'),
+                                    backgroundImage: AssetImage("images/about/den.png"),
                                   ),
-                                  SizedBox(width: 20),
+                                  const SizedBox(width: 20),
                                   Expanded(
                                     child: Container(
                                       padding:
-                                          EdgeInsets.symmetric(vertical: 25),
+                                          const EdgeInsets.symmetric(vertical: 15),
                                       decoration: BoxDecoration(
-                                        color: Colors.orangeAccent,
+                                        color: const Color.fromRGBO(255, 221, 183, 1),
                                         borderRadius: BorderRadius.circular(25),
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         '   Florencio, Daniel Mark C.',
                                         style: TextStyle(
-                                          fontSize: 20,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                          color: Colors.black,
                                         ),
                                         textAlign: TextAlign.left,
                                       ),
@@ -65,31 +77,29 @@ class AboutUsPage extends StatelessWidget {
                               // Other widgets in the column
                             ],
                           ),
-                          SizedBox(height: 20),
+                          
                           Column(
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     radius: 35,
-                                    backgroundImage: NetworkImage(
-                                        'https://source.unsplash.com/random'),
+                                    backgroundImage:AssetImage("images/about/mika.png"),
                                   ),
-                                  SizedBox(width: 20),
+                                  const SizedBox(width: 20),
                                   Expanded(
                                     child: Container(
                                       padding:
-                                          EdgeInsets.symmetric(vertical: 25),
+                                          const EdgeInsets.symmetric(vertical: 15),
                                       decoration: BoxDecoration(
-                                        color: Colors.orangeAccent,
+                                        color: const Color.fromRGBO(255, 221, 183, 1),
                                         borderRadius: BorderRadius.circular(25),
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         '   Herrera, Mikaela Mae D.',
                                         style: TextStyle(
-                                          fontSize: 20,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                          color: Colors.black,
                                         ),
                                         textAlign: TextAlign.left,
                                       ),
@@ -100,31 +110,29 @@ class AboutUsPage extends StatelessWidget {
                               // Other widgets in the column
                             ],
                           ),
-                          SizedBox(height: 20),
+                         
                           Column(
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     radius: 35,
-                                    backgroundImage: NetworkImage(
-                                        'https://source.unsplash.com/random'),
+                                    backgroundImage: AssetImage("images/about/yvette.png"),
                                   ),
-                                  SizedBox(width: 20),
+                                  const SizedBox(width: 20),
                                   Expanded(
                                     child: Container(
                                       padding:
-                                          EdgeInsets.symmetric(vertical: 25),
+                                         const EdgeInsets.symmetric(vertical: 15),
                                       decoration: BoxDecoration(
-                                        color: Colors.orangeAccent,
+                                        color: const Color.fromRGBO(255, 221, 183, 1),
                                         borderRadius: BorderRadius.circular(25),
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         '   Medrano, Yvette Marionne Y.',
                                         style: TextStyle(
-                                          fontSize: 20,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                          color: Colors.black,
                                         ),
                                         textAlign: TextAlign.left,
                                       ),
@@ -135,31 +143,29 @@ class AboutUsPage extends StatelessWidget {
                               // Other widgets in the column
                             ],
                           ),
-                          SizedBox(height: 20),
+                          
                           Column(
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     radius: 35,
-                                    backgroundImage: NetworkImage(
-                                        'https://source.unsplash.com/random'),
+                                    backgroundImage: AssetImage("images/about/shane.png"),
                                   ),
-                                  SizedBox(width: 20),
+                                  const SizedBox(width: 20),
                                   Expanded(
                                     child: Container(
                                       padding:
-                                          EdgeInsets.symmetric(vertical: 25),
+                                          const EdgeInsets.symmetric(vertical: 15),
                                       decoration: BoxDecoration(
-                                        color: Colors.orangeAccent,
+                                        color: const Color.fromRGBO(255, 221, 183, 1),
                                         borderRadius: BorderRadius.circular(25),
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         '   Noprada, Shane Nicole B.',
                                         style: TextStyle(
-                                          fontSize: 20,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                          color: Colors.black,
                                         ),
                                         textAlign: TextAlign.left,
                                       ),
@@ -170,31 +176,29 @@ class AboutUsPage extends StatelessWidget {
                               // Other widgets in the column
                             ],
                           ),
-                          SizedBox(height: 20),
+                          
                           Column(
                             children: [
                               Row(
                                 children: [
-                                  CircleAvatar(
+                                  const CircleAvatar(
                                     radius: 35,
-                                    backgroundImage: NetworkImage(
-                                        'https://source.unsplash.com/random'),
+                                    backgroundImage: AssetImage("images/about/jay.png"),
                                   ),
-                                  SizedBox(width: 20),
+                                  const SizedBox(width: 20),
                                   Expanded(
                                     child: Container(
                                       padding:
-                                          EdgeInsets.symmetric(vertical: 25),
+                                          const EdgeInsets.symmetric(vertical: 15),
                                       decoration: BoxDecoration(
-                                        color: Colors.orangeAccent,
+                                        color: const Color.fromRGBO(255, 221, 183, 1),
                                         borderRadius: BorderRadius.circular(25),
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         '   Revilla, Aarone John',
                                         style: TextStyle(
-                                          fontSize: 20,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
+                                          fontSize: 15,
+                                          color: Colors.black,
                                         ),
                                         textAlign: TextAlign.left,
                                       ),

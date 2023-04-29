@@ -30,7 +30,7 @@ class WelcomePage extends StatelessWidget {
                   Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        Text(
+                        const Text(
                           'SurviveIt',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -38,7 +38,7 @@ class WelcomePage extends StatelessWidget {
                               fontSize: 35,
                               fontWeight: FontWeight.bold),
                         ),
-                        Text(
+                        const Text(
                           'Kids',
                           style: TextStyle(
                               color: Color.fromRGBO(249, 156, 35, 1),
@@ -46,36 +46,36 @@ class WelcomePage extends StatelessWidget {
                               fontWeight: FontWeight.bold),
                         ),
                       ]),
-                  SizedBox(height: 50),
+                  const SizedBox(height: 50),
                   Container(
-                      margin: EdgeInsets.only(left: 70, right: 70, bottom: 5),
+                      margin: const EdgeInsets.only(left: 70, right: 70, bottom: 5),
                       child: ClipRRect(
                           borderRadius: BorderRadius.circular(50),
                           child: Material(
                               color: Colors.transparent,
                               child: InkWell(
-                                splashColor: Color(0xFF80D8FF).withOpacity(0.5),
+                                splashColor: const Color(0xFF80D8FF).withOpacity(0.5),
                                 highlightColor:
-                                    Color(0xFF80D8FF).withOpacity(0.3),
+                                    const Color(0xFF80D8FF).withOpacity(0.3),
                                 onTap: () {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => MyHomePage()));
+                                          builder: (context) => const MyHomePage()));
                                 },
                                 child: Container(
-                                    padding: EdgeInsets.all(15),
-                                    child: Text('Start Learning!',
+                                    padding: const EdgeInsets.all(15),
+                                    child: const Text('Start Learning!',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             fontSize: 17,
                                             color: Colors.white,
                                             fontWeight: FontWeight.bold)),
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Color.fromRGBO(255, 138, 0, 1),
                                     )),
                               )))),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Padding(
                     padding:
                         const EdgeInsets.only(left: 70, right: 70, bottom: 5),
@@ -88,13 +88,13 @@ class WelcomePage extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Color.fromRGBO(255, 191, 116, 1),
-                        padding: EdgeInsets.all(13),
+                        primary: const Color.fromRGBO(255, 191, 116, 1),
+                        padding: const EdgeInsets.all(13),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50),
                         ),
                       ),
-                      child: Text(
+                      child: const Text(
                         'Quiz',
                         style: TextStyle(
                           color: Colors.black,
@@ -104,7 +104,7 @@ class WelcomePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Padding(
                     padding:
                         const EdgeInsets.only(left: 70, right: 70, bottom: 5),
@@ -117,13 +117,13 @@ class WelcomePage extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Color.fromRGBO(255, 191, 116, 1),
-                        padding: EdgeInsets.all(13),
+                        primary: const Color.fromRGBO(255, 191, 116, 1),
+                        padding: const EdgeInsets.all(13),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50),
                         ),
                       ),
-                      child: Text(
+                      child: const Text(
                         'About Us',
                         style: TextStyle(
                           color: Colors.black,

@@ -213,53 +213,53 @@ void main() {
         ),
         builder: (context, player) => Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.indigoAccent.shade700,
+            backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
             actions: <Widget>[
               IconButton(
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => search()));
                 },
-                icon: Icon(Icons.search),
+                icon: const Icon(Icons.search),
               )
             ],
             centerTitle: true,
-            title: Text(' Dart Programming'),
+            title: const Text(' Dart Programming'),
           ),
           body: Container(
             child: ListView(
-              physics: BouncingScrollPhysics(),
-              padding: EdgeInsets.all(16),
+              physics: const BouncingScrollPhysics(),
+              padding: const EdgeInsets.all(16),
               children: <Widget>[
-                SizedBox(height: 10),
-                Text('Dart Programming',
+                const SizedBox(height: 10),
+                const Text('Dart Programming',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         )
                       ],
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       ''''Dart is a programming language designed for client development, such as for the web and mobile apps. It is developed by Google and can also be used to build server and desktop applications. It is an object-oriented, class-based, garbage-collected language with C-style syntax
                       ''',
                       textAlign: TextAlign.justify,
@@ -269,7 +269,7 @@ void main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Container(
@@ -278,20 +278,20 @@ void main() {
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         )
                       ],
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(''''Reasons to learn Dart programming: 
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(''''Reasons to learn Dart programming: 
 
 1. Dart embraced the open source ecosystem
 2. Dart is pretty easy to learn
@@ -312,9 +312,9 @@ void main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 player,
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton(
                   child: const Text('Play / Pause'),
                   onPressed: () {
@@ -326,8 +326,8 @@ void main() {
                     }
                   },
                 ),
-                SizedBox(height: 20),
-                Text(
+                const SizedBox(height: 20),
+                const Text(
                     'You also can download the DART SDK manually to your computer',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
@@ -336,20 +336,20 @@ void main() {
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton(
-                  child: Text("Download DART SDK"),
+                  child: const Text("Download DART SDK"),
                   onPressed: _launchURLSDK,
                 ),
-                SizedBox(height: 10),
-                Text('Fundamentals',
+                const SizedBox(height: 10),
+                const Text('Fundamentals',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text('Output data',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -359,18 +359,18 @@ void main() {
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -378,9 +378,9 @@ void main() {
                         )
                       ],
                       //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('''
 To output data in dart, we can use the print command, we can simply enter a variable or string literal inside in order for it to appear in our command line. 
 
 Sample: 
@@ -394,7 +394,7 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Text('Data Types',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -404,27 +404,27 @@ print(11);
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         )
                       ],
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'In the above topic, we mentioned variables. Each variable is able to contain different kinds of data, those different kinds of data is what we consider as “Data types”. Here are the different kinds of Data types in Dart',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -433,13 +433,13 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Image.asset('images/Samples/DataTypes_Dart.jpg'),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Image.asset('images/Samples/data_types_1.png'),
                 Image.asset('images/Samples/data_types_2.png'),
-                SizedBox(height: 20),
-                Text(' Arithmetic Operators',
+                const SizedBox(height: 20),
+                const Text(' Arithmetic Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -448,18 +448,18 @@ print(11);
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -467,9 +467,9 @@ print(11);
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Arithmetic operators are used to perform different mathematical operations.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -479,18 +479,18 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -498,9 +498,9 @@ print(11);
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       ' Addition (+)\n Subtraction (-)\n Multiplication (*)\n Division (/)\n Modulus (%)\n Exponentiation (**)\n Floor Division (//)',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -510,8 +510,8 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text(' Comparison Operators',
+                const SizedBox(height: 10),
+                const Text(' Comparison Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -520,18 +520,18 @@ print(11);
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -539,9 +539,9 @@ print(11);
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Comparison operators compare two values and indicate the difference between them. They return either a True or False value',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -551,18 +551,18 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -570,9 +570,9 @@ print(11);
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       ' Equal (==)\n Not Equal (!=)\n Greater Than (>)\n Less Than (<)\n Greater Than or Equal (>=)\n Less Than or Equal (<=)',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -582,8 +582,8 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text(' Logical Operators',
+                const SizedBox(height: 10),
+                const Text(' Logical Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -592,18 +592,18 @@ print(11);
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -611,9 +611,9 @@ print(11);
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Logical operators are used to combine conditional statements.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -623,18 +623,18 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -642,9 +642,9 @@ print(11);
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'AND Operator - this operator checks if both statements are true. \n\nOR Operator - this operator checks if only one of the statements is true.\n\nNOT Operator - this operator returns the opposite of whatever the current values is.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -654,7 +654,7 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text('Coditional Statements',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -664,18 +664,18 @@ print(11);
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -683,9 +683,9 @@ print(11);
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'A conditional statement is a Boolean expression that, if True, executes a piece of code.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -695,18 +695,18 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -714,9 +714,9 @@ print(11);
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'IF statement - this is used for decision-making operations. \n\nELSE statement - this provides an alternative solution in case both the IF and ELIF are False.\n\nELIF statement - short for else if, this gives an alternate condition so that the code can have another chance to run.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -726,7 +726,7 @@ print(11);
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Text('Methods and Classes',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -736,27 +736,27 @@ print(11);
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         )
                       ],
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       ''''Dart is similar to Java in the way that they handle classes and Functions. 
 
 Classes are the code equivalent of real life objects, we make those objects inside our program by using classes as their blueprint                      
@@ -773,7 +773,7 @@ They are often categorized by their data return type and parameters.
                       )),
                 ),
                 Image.asset('images/Samples/class_dart.jpg'),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Text('Flutter',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -783,27 +783,27 @@ They are often categorized by their data return type and parameters.
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         )
                       ],
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('''
 Dart is a unique programming language where its primarily used with Flutter so you would often see it associated with each of the Flutter application's widgets. 
 
 Of course, Dart isn't ONLY used with Flutter and is usuble for other applications but it is an integral part to Dart's identity. 
@@ -817,34 +817,34 @@ If you wish to learn more about flutter follow the link below:
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 15),
+                const SizedBox(height: 15),
                 ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
-                      primary: Color.fromARGB(255, 19, 3, 29),
+                      primary: const Color.fromARGB(255, 19, 3, 29),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(30),
                       ),
                       // maximumSize: Size(90, 80),
                       elevation: 10,
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 0,
                       ),
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
                       ),
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.u_turn_left,
                       size: 22,
                     ),
-                    label: Text("Learn more about Flutter"),
+                    label: const Text("Learn more about Flutter"),
                     onPressed: () {
                       const more_flutter = 'https://flutter.dev/';
                       launch(more_flutter);
                     }),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.lightBlue.shade900,
@@ -853,27 +853,27 @@ If you wish to learn more about flutter follow the link below:
                       ),
                       // maximumSize: Size(90, 80),
                       elevation: 10,
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 0,
                       ),
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
                       ),
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.web,
                       size: 22,
                     ),
-                    label: Text("Dart Online Compiler"),
+                    label: const Text("Dart Online Compiler"),
                     onPressed: () {
                       const dart_pad = 'https://dartpad.dev/?';
 
                       launch(dart_pad);
                     }),
-                SizedBox(height: 20),
-                Text('Sample Source Code',
+                const SizedBox(height: 20),
+                const Text('Sample Source Code',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 25,
@@ -888,8 +888,8 @@ If you wish to learn more about flutter follow the link below:
                 buildCard2(
                   ' SIMPLE CALCULATOR',
                 ),
-                SizedBox(height: 20),
-                Text('Dart Online Courses',
+                const SizedBox(height: 20),
+                const Text('Dart Online Courses',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 25,
@@ -904,22 +904,22 @@ If you wish to learn more about flutter follow the link below:
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade600,
-                            offset: Offset(4.0, 4.0),
+                            offset: const Offset(4.0, 4.0),
                             blurRadius: 15.0,
                             spreadRadius: 1.0,
                           ),
-                          BoxShadow(
+                          const BoxShadow(
                             color: Colors.white,
                             offset: Offset(-4.0, -4.0),
                             blurRadius: 15.0,
                             spreadRadius: 1.0,
                           )
                         ],
-                        borderRadius: BorderRadius.all(Radius.circular(10))),
-                    padding: EdgeInsets.all(30),
+                        borderRadius: const BorderRadius.all(Radius.circular(10))),
+                    padding: const EdgeInsets.all(30),
                     child: RichText(
                         text: TextSpan(children: [
-                      TextSpan(
+                      const TextSpan(
                           style: TextStyle(
                             color: Colors.black,
                             fontSize: 24,
@@ -930,7 +930,7 @@ If you wish to learn more about flutter follow the link below:
                           ),
                           text: "Coursera\n"),
                       TextSpan(
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.blue,
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
@@ -946,7 +946,7 @@ If you wish to learn more about flutter follow the link below:
                               launch(course);
                             }),
                       TextSpan(
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.blue, fontSize: 18,
                             fontWeight: FontWeight.bold,
                             letterSpacing: 1,
@@ -963,7 +963,7 @@ If you wish to learn more about flutter follow the link below:
                               launch(course2);
                             }),
                       TextSpan(
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.blue, fontSize: 18,
                             fontWeight: FontWeight.bold,
                             letterSpacing: 1,
@@ -988,19 +988,19 @@ If you wish to learn more about flutter follow the link below:
       );
 
   Widget buildCard(String title, String urlImage) => Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints.tightForFinite(width: 50),
+          constraints: const BoxConstraints.tightForFinite(width: 50),
           decoration: BoxDecoration(
               color: Colors.grey[300],
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.shade600,
-                  offset: Offset(4.0, 4.0),
+                  offset: const Offset(4.0, 4.0),
                   blurRadius: 15.0,
                   spreadRadius: 1.0,
                 ),
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.white,
                   offset: Offset(-4.0, -4.0),
                   blurRadius: 15.0,
@@ -1008,16 +1008,16 @@ If you wish to learn more about flutter follow the link below:
                 )
               ],
               //border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              borderRadius: const BorderRadius.all(Radius.circular(10))),
           child: Card(
             clipBehavior: Clip.antiAlias,
             child: Column(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ExpandablePanel(
-                  theme: ExpandableThemeData(
+                  theme: const ExpandableThemeData(
                     expandIcon: Icons.arrow_downward,
                     collapseIcon: Icons.arrow_upward,
                     tapBodyToCollapse: true,
@@ -1025,7 +1025,7 @@ If you wish to learn more about flutter follow the link below:
                   ),
                   header: Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 19,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1,
@@ -1034,7 +1034,7 @@ If you wish to learn more about flutter follow the link below:
                   ),
                   collapsed: Text(
                     expanded_text,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       letterSpacing: 1,
                       fontFamily: 'Poppins',
@@ -1045,7 +1045,7 @@ If you wish to learn more about flutter follow the link below:
                   ),
                   expanded: Text(
                     List.generate(1, (_) => expanded_text).join('\n\n'),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       letterSpacing: 1,
                       fontFamily: 'Poppins',
@@ -1066,19 +1066,19 @@ If you wish to learn more about flutter follow the link below:
       );
 
   Widget buildCard2(String title) => Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints.tightForFinite(width: 50),
+          constraints: const BoxConstraints.tightForFinite(width: 50),
           decoration: BoxDecoration(
               color: Colors.grey[300],
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.shade600,
-                  offset: Offset(4.0, 4.0),
+                  offset: const Offset(4.0, 4.0),
                   blurRadius: 15.0,
                   spreadRadius: 1.0,
                 ),
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.white,
                   offset: Offset(-4.0, -4.0),
                   blurRadius: 15.0,
@@ -1086,10 +1086,10 @@ If you wish to learn more about flutter follow the link below:
                 )
               ],
               //border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              borderRadius: const BorderRadius.all(Radius.circular(10))),
           child: Card(
             child: ExpandablePanel(
-              theme: ExpandableThemeData(
+              theme: const ExpandableThemeData(
                 expandIcon: Icons.arrow_downward,
                 collapseIcon: Icons.arrow_upward,
                 tapBodyToCollapse: true,
@@ -1097,7 +1097,7 @@ If you wish to learn more about flutter follow the link below:
               ),
               header: Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 19,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1,
@@ -1106,7 +1106,7 @@ If you wish to learn more about flutter follow the link below:
               ),
               collapsed: Text(
                 expanded_text2,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',
@@ -1117,7 +1117,7 @@ If you wish to learn more about flutter follow the link below:
               ),
               expanded: Text(
                 List.generate(1, (_) => expanded_text2).join('\n\n'),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',

@@ -18,11 +18,11 @@ class _FavoritePageState extends State<FavoritePage> {
   }
 
   List<String> mainDataList = [
-    "Java",
-    "JavaScript",
-    "C++",
-    "Dart",
-    "Python",
+    "First Aid",
+    "Earthquakes",
+    "Tsunamis",
+    "Volcanoes",
+    "Emergency Call",
   ];
 
   static List<String> favoriteDataList = [];
@@ -32,9 +32,10 @@ class _FavoritePageState extends State<FavoritePage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Favorites'),
-          backgroundColor: Colors.indigoAccent.shade700,
-          bottom: TabBar(
+          title: const Text('Favorites'),
+          centerTitle: true,
+          backgroundColor: const Color.fromRGBO(255,191,116,1),
+          bottom: const TabBar(
             tabs: [
               Tab(icon: Icon(Icons.article_rounded)),
               Tab(icon: Icon(Icons.favorite)),
@@ -67,7 +68,7 @@ class _FavoritePageState extends State<FavoritePage> {
                         },
                         style: ButtonStyle(
                           backgroundColor: MaterialStateProperty.all<Color>(
-                            Color.fromARGB(255, 10, 20, 75),
+                            const Color.fromARGB(255, 10, 20, 75),
                           ),
                         ),
                         child: const Icon(
@@ -75,7 +76,7 @@ class _FavoritePageState extends State<FavoritePage> {
                           color: Colors.white,
                         ),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                     ],
                   ),
                 );
@@ -113,7 +114,7 @@ class _FavoritePageState extends State<FavoritePage> {
                               style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
-                                  Color.fromARGB(255, 10, 20, 75),
+                                  const Color.fromARGB(255, 10, 20, 75),
                                 ),
                               ),
                               child: const Icon(
@@ -121,38 +122,38 @@ class _FavoritePageState extends State<FavoritePage> {
                                 color: Colors.white,
                               ),
                             ),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                             ElevatedButton(
                               onPressed: () {
                                 if (favoriteDataList[index] == "Java") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => JavaPage()));
+                                          builder: (context) => const JavaPage()));
                                 } else if (favoriteDataList[index] == "Dart") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => DartPage()));
+                                          builder: (context) => const DartPage()));
                                 } else if (favoriteDataList[index] ==
                                     "JavaScript") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              JavascriptPage()));
+                                              const JavascriptPage()));
                                 } else if (favoriteDataList[index] ==
                                     "Python") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => PythonPage()));
+                                          builder: (context) => const PythonPage()));
                                 } else if (favoriteDataList[index] == "C++") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              CPlusPlusPage()));
+                                              const CPlusPlusPage()));
                                 }
                               },
                               style: ButtonStyle(
@@ -164,7 +165,7 @@ class _FavoritePageState extends State<FavoritePage> {
                               child: Column(
                                 // Replace with a Row for horizontal icon + text
                                 children: <Widget>[
-                                  Icon(
+                                  const Icon(
                                     Icons.call_made_rounded,
                                     color: Colors.white,
                                   ),
@@ -172,7 +173,7 @@ class _FavoritePageState extends State<FavoritePage> {
                                 ],
                               ),
                             ),
-                            SizedBox(width: 10),
+                            const SizedBox(width: 10),
                           ],
                         ),
                       );

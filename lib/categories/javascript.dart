@@ -39,12 +39,12 @@ class _JavascriptPageState extends State<JavascriptPage> {
           index: _selectedIndex,
           onTap: _onItemTapped,
           backgroundColor: Colors.white,
-          color: Colors.indigoAccent.shade700,
-          animationDuration: Duration(milliseconds: 300),
+          color: const Color.fromRGBO(255, 191, 116, 1),
+          animationDuration: const Duration(milliseconds: 300),
           items: [
-            Icon(Icons.home, color: Colors.white),
-            Icon(Icons.favorite, color: Colors.white),
-            Icon(Icons.assistant, color: Colors.white),
+            const Icon(Icons.home, color: Colors.white),
+            const Icon(Icons.favorite, color: Colors.white),
+            const Icon(Icons.assistant, color: Colors.white),
           ]),
     );
   }

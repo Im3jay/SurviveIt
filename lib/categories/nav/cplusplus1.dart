@@ -172,13 +172,14 @@ int main() {
         ),
         builder: (context, player) => Scaffold(
           appBar: AppBar(
-            title: Text(' C++ Programming'),
-            backgroundColor: Colors.indigoAccent.shade700,
+            title: const Text(' C++ Programming'),
+            centerTitle: true,
+            backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
           ),
           body: Container(
             child: ListView(
-              physics: BouncingScrollPhysics(),
-              padding: EdgeInsets.all(16),
+              physics: const BouncingScrollPhysics(),
+              padding: const EdgeInsets.all(16),
               children: <Widget>[
                 Image.asset(
                   'images/Welcome2.jpg',
@@ -186,8 +187,8 @@ int main() {
                   height: 80,
                   fit: BoxFit.cover,
                 ),
-                SizedBox(height: 10),
-                Text('C++ Programming',
+                const SizedBox(height: 10),
+                const Text('C++ Programming',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 25,
@@ -195,18 +196,18 @@ int main() {
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -214,9 +215,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'C++ is used to create computer programs, and is one of the most used language in game development.\n\nC++ is a portable language that works equally well on Microsoft Windows, Apple Mac OS, Linux and Unix systems which was developed by Bjarne Stroustrup.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -226,8 +227,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text('The Developer',
+                const SizedBox(height: 10),
+                const Text('The Developer',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 22,
@@ -250,11 +251,11 @@ int main() {
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -262,9 +263,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       '- Bjarne Stroustrup is a Danish computer scientist at Bell Labs in the United States.\n\n- Born on December 30, 1950\n\n- He is a Technical Fellow and Managing Director at Morgan Stanley in New York City and a Visiting Professor at Columbia University.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -275,8 +276,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 20),
-                Text('Why should you learn C++?',
+                const SizedBox(height: 20),
+                const Text('Why should you learn C++?',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 22,
@@ -284,18 +285,18 @@ int main() {
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -303,9 +304,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'It is a highly developed programming language in terms of operators, simplicity, and ease of notation. This allows for data abstraction and the use of several programming paradigms:\n- procedural\n- object-oriented\n- generic\n\nIt is characterized by the high performance of the object code, direct access to hardware resources and system functions, ease of creation and use of libraries, independence of any specific hardware or system platform and a small execution environment.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -315,7 +316,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.lightBlue.shade900,
@@ -324,28 +325,28 @@ int main() {
                       ),
                       // maximumSize: Size(90, 80),
                       elevation: 10,
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 0,
                       ),
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
                       ),
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.download,
                       size: 22,
                     ),
-                    label: Text("C++ Installation"),
+                    label: const Text("C++ Installation"),
                     onPressed: () {
                       const cplusplus_install =
                           'https://www.w3schools.in/cplusplus/install/';
 
                       launch(cplusplus_install);
                     }),
-                SizedBox(height: 50),
-                Text(
+                const SizedBox(height: 50),
+                const Text(
                   ' Learn C++ in 1 hour',
                   textAlign: TextAlign.left,
                   style: TextStyle(
@@ -357,7 +358,7 @@ int main() {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                Text(
+                const Text(
                   ' by Programming with Mosh',
                   textAlign: TextAlign.left,
                   style: TextStyle(
@@ -369,9 +370,9 @@ int main() {
                     // fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 player,
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton.icon(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.redAccent.shade700,
@@ -380,20 +381,20 @@ int main() {
                     ),
                     // maximumSize: Size(90, 80),
                     elevation: 10,
-                    padding: EdgeInsets.symmetric(
+                    padding: const EdgeInsets.symmetric(
                       vertical: 10,
                       horizontal: 0,
                     ),
-                    textStyle: TextStyle(
+                    textStyle: const TextStyle(
                       fontFamily: 'Poppins',
                       fontSize: 20,
                     ),
                   ),
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.play_arrow_sharp,
                     size: 22,
                   ),
-                  label: Text("Play / Pause"),
+                  label: const Text("Play / Pause"),
                   onPressed: () {
                     //controller.toggleFullScreenMode();
                     if (controller.value.isPlaying) {
@@ -403,8 +404,8 @@ int main() {
                     }
                   },
                 ),
-                SizedBox(height: 20),
-                Text(' What is an IDE?',
+                const SizedBox(height: 20),
+                const Text(' What is an IDE?',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 20,
@@ -413,18 +414,18 @@ int main() {
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -432,9 +433,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'An IDE, or Integrated Development Environment, enables programmers to consolidate the different aspects of writing a computer program.\n\nIDEs increase programmer productivity by combining common activities of writing software into a single application: editing source code, building executables, and debugging.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -445,8 +446,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 20),
-                Text(' Visual Studio Code',
+                const SizedBox(height: 20),
+                const Text(' Visual Studio Code',
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontSize: 20,
@@ -455,18 +456,18 @@ int main() {
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -474,9 +475,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Visual Studio Code is a code editor. It is “a free-editor that helps the programmer write code, helps in debugging and corrects the code using the intelli-sense method ”. In normal terms, it facilitates users to write the code in an easy manner.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -487,7 +488,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.lightBlue.shade900,
@@ -496,28 +497,28 @@ int main() {
                       ),
                       // maximumSize: Size(90, 80),
                       elevation: 10,
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 0,
                       ),
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
                       ),
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.download,
                       size: 22,
                     ),
-                    label: Text("Download Visual Studio"),
+                    label: const Text("Download Visual Studio"),
                     onPressed: () {
                       const vscode_install =
                           'https://code.visualstudio.com/Download';
 
                       launch(vscode_install);
                     }),
-                SizedBox(height: 50),
-                Text('Fundamentals',
+                const SizedBox(height: 50),
+                const Text('Fundamentals',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontFamily: 'Poppins',
@@ -526,8 +527,8 @@ int main() {
                         letterSpacing: 1,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 10),
-                Text(' Variables',
+                const SizedBox(height: 10),
+                const Text(' Variables',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -537,18 +538,18 @@ int main() {
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -556,9 +557,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.grey),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Variables are containers for storing data values. In C++, there are different types of variables.',
                       style: TextStyle(
                         fontSize: 16,
@@ -567,8 +568,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text(' Data Types',
+                const SizedBox(height: 10),
+                const Text(' Data Types',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -578,18 +579,18 @@ int main() {
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -597,9 +598,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'In C++, variables have different data type. The following are:\n\n- int\n- double or float\n- char\n- string\n- bool',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -610,7 +611,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(' INTEGER',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -621,18 +622,18 @@ int main() {
                       letterSpacing: 1,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -640,9 +641,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'The integer data type is comprised of all the positive and negative whole numbers.\n\nEx.\n  int num = 5;\n  cout<< num;',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -652,7 +653,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(' DOUBLE or FLOAT',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -663,18 +664,18 @@ int main() {
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -682,9 +683,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Double or Float stores floating point numbers, with decimals.\n\nEx.\n  int num2 = 20.8;\n  cout << num2;',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -694,7 +695,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(' CHARACTER',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -705,18 +706,18 @@ int main() {
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -724,9 +725,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       ' A char stores single characters. Char values are surrounded by single quotes.\n\nEx.\n  char myLetter = A;\n  cout << myLetter;',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -736,7 +737,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(' STRING',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -747,18 +748,18 @@ int main() {
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -766,9 +767,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'A string is a collection of characters closed within double quotation marks.\n\nEx.\n  string myString = "Hello World!";\n  cout << myString;',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -778,7 +779,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(' BOOLEAN',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -789,18 +790,18 @@ int main() {
                       color: Colors.blue[900],
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -808,9 +809,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'A boolean values is either True or False, just like the value of a conditional expression after it has been evaluated.\n\nEx.\n  bool is_hot = true;\n  cout << is_hot;',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -820,8 +821,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text(' Arithmetic Operators',
+                const SizedBox(height: 10),
+                const Text(' Arithmetic Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -831,18 +832,18 @@ int main() {
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -850,9 +851,9 @@ int main() {
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Arithmetic operators are used to perform different mathematical operations.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -863,18 +864,18 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -882,9 +883,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       '            NAME               OPERATOR\n           Addition       -        (+)\n      Subtraction       -        (-)\n   Multiplication       -        (*)\n            Division       -        (/)\n           Modulus       -        (%)\n        Increment       -        (++)\n       Decrement       -        (--)',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -895,8 +896,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text(' Comparison Operators',
+                const SizedBox(height: 10),
+                const Text(' Comparison Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -906,18 +907,18 @@ int main() {
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -925,9 +926,9 @@ int main() {
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Comparison operators compare two values and indicate the difference between them. They return either a True or False value',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -938,18 +939,18 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -957,9 +958,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text('''
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text('''
             NAME                     OPERATOR
   Equal                           -      (==) 
   Not Equal                     -      (!=)
@@ -977,8 +978,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text(' Logical Operators',
+                const SizedBox(height: 10),
+                const Text(' Logical Operators',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -988,18 +989,18 @@ int main() {
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -1007,9 +1008,9 @@ int main() {
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'Logical operators are used to determine the logic between variables or values.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -1020,18 +1021,18 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -1039,9 +1040,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       '&& (Logical and) - this operator returns true if both statements are true. \n\n|| (Logical or) - this operator returns true if one of the statements is true.\n\n! (Logical not) - this operator reverse the result, returns false if the result is true.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -1052,8 +1053,8 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
-                Text(' Coditional Statements',
+                const SizedBox(height: 10),
+                const Text(' Coditional Statements',
                     textAlign: TextAlign.justify,
                     style: TextStyle(
                       fontSize: 18,
@@ -1063,18 +1064,18 @@ int main() {
                       color: Colors.black,
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -1082,9 +1083,9 @@ int main() {
                         )
                       ],
                       border: Border.all(color: Colors.black, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'A conditional statement is a Boolean expression that, if True, executes a piece of code.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -1095,18 +1096,18 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[300],
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -1114,9 +1115,9 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       'IF statement - this is used to specify a block of code to be executed, if a specified condition is true. \n\nELSE statement - this is used to specify a block of code to be executed, if the same condition is false.\n\nELSE IF statement - This is used to specify a new condition to test, if the first condition is false.\n\nSWITCH CASE - This is used to specify many alternative blocks of code to be executed.',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -1127,7 +1128,7 @@ int main() {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 15),
+                const SizedBox(height: 15),
                 ElevatedButton.icon(
                     style: ElevatedButton.styleFrom(
                       primary: Colors.lightBlue.shade900,
@@ -1136,28 +1137,28 @@ int main() {
                       ),
                       // maximumSize: Size(90, 80),
                       elevation: 10,
-                      padding: EdgeInsets.symmetric(
+                      padding: const EdgeInsets.symmetric(
                         vertical: 10,
                         horizontal: 0,
                       ),
-                      textStyle: TextStyle(
+                      textStyle: const TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 20,
                       ),
                     ),
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.web,
                       size: 22,
                     ),
-                    label: Text("C++ Online Compiler"),
+                    label: const Text("C++ Online Compiler"),
                     onPressed: () {
                       const cplusplus_gdb =
                           'https://www.onlinegdb.com/online_c++_compiler';
 
                       launch(cplusplus_gdb);
                     }),
-                SizedBox(height: 20),
-                Text('Sample Source Code',
+                const SizedBox(height: 20),
+                const Text('Sample Source Code',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 25,
@@ -1173,8 +1174,8 @@ int main() {
                 buildCard3(
                   ' 3. FINDING HIGHEST NUMBER',
                 ),
-                SizedBox(height: 20),
-                Text('C++ Online Courses',
+                const SizedBox(height: 20),
+                const Text('C++ Online Courses',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 25,
@@ -1189,11 +1190,11 @@ int main() {
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(4.0, 4.0),
+                          offset: const Offset(4.0, 4.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 15.0,
@@ -1201,11 +1202,11 @@ int main() {
                         )
                       ],
                       //border: Border.all(color: Colors.blue, width: 2),
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(30),
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(30),
                   child: RichText(
                       text: TextSpan(children: [
-                    TextSpan(
+                    const TextSpan(
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 24,
@@ -1218,7 +1219,7 @@ int main() {
                         ),
                         text: "Coursera\n"),
                     TextSpan(
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.blue, fontSize: 18,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 1,
@@ -1235,7 +1236,7 @@ int main() {
                             launch(course);
                           }),
                     TextSpan(
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.blue, fontSize: 18,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 1,
@@ -1251,7 +1252,7 @@ int main() {
                             launch(course2);
                           }),
                     TextSpan(
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.blue, fontSize: 18,
                           fontWeight: FontWeight.bold,
                           letterSpacing: 1,
@@ -1277,19 +1278,19 @@ int main() {
       );
 
   Widget buildCard(String title) => Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints.tightForFinite(width: 50),
+          constraints: const BoxConstraints.tightForFinite(width: 50),
           decoration: BoxDecoration(
               color: Colors.grey[300],
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.shade600,
-                  offset: Offset(4.0, 4.0),
+                  offset: const Offset(4.0, 4.0),
                   blurRadius: 15.0,
                   spreadRadius: 1.0,
                 ),
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.white,
                   offset: Offset(-4.0, -4.0),
                   blurRadius: 15.0,
@@ -1297,16 +1298,16 @@ int main() {
                 )
               ],
               //border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              borderRadius: const BorderRadius.all(Radius.circular(10))),
           child: Card(
             clipBehavior: Clip.antiAlias,
             child: Column(
               children: <Widget>[
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 ExpandablePanel(
-                  theme: ExpandableThemeData(
+                  theme: const ExpandableThemeData(
                     expandIcon: Icons.arrow_downward,
                     collapseIcon: Icons.arrow_upward,
                     tapBodyToCollapse: true,
@@ -1314,7 +1315,7 @@ int main() {
                   ),
                   header: Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 19,
                       fontWeight: FontWeight.bold,
                       letterSpacing: 1,
@@ -1323,7 +1324,7 @@ int main() {
                   ),
                   collapsed: Text(
                     expanded_text,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       letterSpacing: 1,
                       fontFamily: 'Poppins',
@@ -1334,7 +1335,7 @@ int main() {
                   ),
                   expanded: Text(
                     List.generate(1, (_) => expanded_text).join('\n\n'),
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                       letterSpacing: 1,
                       fontFamily: 'Poppins',
@@ -1355,19 +1356,19 @@ int main() {
       );
 
   Widget buildCard2(String title) => Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints.tightForFinite(width: 50),
+          constraints: const BoxConstraints.tightForFinite(width: 50),
           decoration: BoxDecoration(
               color: Colors.grey[300],
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.shade600,
-                  offset: Offset(4.0, 4.0),
+                  offset: const Offset(4.0, 4.0),
                   blurRadius: 15.0,
                   spreadRadius: 1.0,
                 ),
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.white,
                   offset: Offset(-4.0, -4.0),
                   blurRadius: 15.0,
@@ -1375,10 +1376,10 @@ int main() {
                 )
               ],
               //border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              borderRadius: const BorderRadius.all(Radius.circular(10))),
           child: Card(
             child: ExpandablePanel(
-              theme: ExpandableThemeData(
+              theme: const ExpandableThemeData(
                 expandIcon: Icons.arrow_downward,
                 collapseIcon: Icons.arrow_upward,
                 tapBodyToCollapse: true,
@@ -1386,7 +1387,7 @@ int main() {
               ),
               header: Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 19,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1,
@@ -1395,7 +1396,7 @@ int main() {
               ),
               collapsed: Text(
                 expanded_text2,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',
@@ -1406,7 +1407,7 @@ int main() {
               ),
               expanded: Text(
                 List.generate(1, (_) => expanded_text2).join('\n\n'),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',
@@ -1424,19 +1425,19 @@ int main() {
         ),
       );
   Widget buildCard3(String title) => Padding(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         child: Container(
-          constraints: BoxConstraints.tightForFinite(width: 50),
+          constraints: const BoxConstraints.tightForFinite(width: 50),
           decoration: BoxDecoration(
               color: Colors.grey[300],
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.shade600,
-                  offset: Offset(4.0, 4.0),
+                  offset: const Offset(4.0, 4.0),
                   blurRadius: 15.0,
                   spreadRadius: 1.0,
                 ),
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.white,
                   offset: Offset(-4.0, -4.0),
                   blurRadius: 15.0,
@@ -1444,10 +1445,10 @@ int main() {
                 )
               ],
               //border: Border.all(color: Colors.blue, width: 2),
-              borderRadius: BorderRadius.all(Radius.circular(10))),
+              borderRadius: const BorderRadius.all(Radius.circular(10))),
           child: Card(
             child: ExpandablePanel(
-              theme: ExpandableThemeData(
+              theme: const ExpandableThemeData(
                 expandIcon: Icons.arrow_downward,
                 collapseIcon: Icons.arrow_upward,
                 tapBodyToCollapse: true,
@@ -1455,7 +1456,7 @@ int main() {
               ),
               header: Text(
                 title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 19,
                   fontWeight: FontWeight.bold,
                   letterSpacing: 1,
@@ -1464,7 +1465,7 @@ int main() {
               ),
               collapsed: Text(
                 expanded_text3,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',
@@ -1475,7 +1476,7 @@ int main() {
               ),
               expanded: Text(
                 List.generate(1, (_) => expanded_text3).join('\n\n'),
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   letterSpacing: 1,
                   fontFamily: 'Poppins',

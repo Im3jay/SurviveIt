@@ -173,7 +173,7 @@ public class PermuteString {
         ),
         builder: (context, player) => Scaffold(
           appBar: AppBar(
-            backgroundColor: Colors.indigoAccent.shade700,
+            backgroundColor: Color.fromRGBO(255, 191, 116, 1),
             actions: <Widget>[
               IconButton(
                 onPressed: () {

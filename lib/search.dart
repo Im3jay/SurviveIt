@@ -48,11 +48,11 @@ class _SearchState extends State<search> {
             onPressed: () {
               showSearch(context: context, delegate: Search(widget.list));
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           )
         ],
         centerTitle: true,
-        title: Text('Search Bar'),
+        title: const Text('Search Bar'),
       ),
       body: ListView.builder(
         itemCount: widget.list.length,
@@ -70,29 +70,29 @@ class Search extends SearchDelegate {
   void displaySearch(BuildContext context) {
     if (selectedResult == "Java" || selectedResult == "java") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => JavaPage()));
+          context, MaterialPageRoute(builder: (context) => const JavaPage()));
     } else if (selectedResult == "Dart" || selectedResult == "dart") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => DartPage()));
+          context, MaterialPageRoute(builder: (context) => const DartPage()));
     } else if (selectedResult == "javaScript" ||
         selectedResult == "JavaScript" ||
         selectedResult == "javascript") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => JavascriptPage()));
+          context, MaterialPageRoute(builder: (context) => const JavascriptPage()));
     } else if (selectedResult == "python" || selectedResult == "Python") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => PythonPage()));
+          context, MaterialPageRoute(builder: (context) => const PythonPage()));
     } else if (selectedResult == "cplusplus" ||
         selectedResult == "Cplusplus" ||
         selectedResult == "c++" ||
         selectedResult == "C++") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => CPlusPlusPage()));
+          context, MaterialPageRoute(builder: (context) => const CPlusPlusPage()));
     }
     else if (selectedResult == "home" ||
         selectedResult == "Home") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => MyHomePage()));
+          context, MaterialPageRoute(builder: (context) => const MyHomePage()));
     }
     else if (selectedResult == "favorite" ||
         selectedResult == "Favorite") {
@@ -105,7 +105,7 @@ class Search extends SearchDelegate {
   List<Widget> buildActions(BuildContext context) {
     return <Widget>[
       IconButton(
-        icon: Icon(Icons.close),
+        icon: const Icon(Icons.close),
         onPressed: () {
           query = "";
         },
@@ -116,7 +116,7 @@ class Search extends SearchDelegate {
   @override
   Widget buildLeading(BuildContext context) {
     return IconButton(
-      icon: Icon(Icons.arrow_back),
+      icon: const Icon(Icons.arrow_back),
       onPressed: () {
         Navigator.pop(context);
       },
@@ -125,7 +125,7 @@ class Search extends SearchDelegate {
 
   @override
   Widget buildResults(BuildContext context) {
-    return SizedBox.shrink();
+    return const SizedBox.shrink();
   }
 
   final List<String> listExample;
@@ -150,7 +150,7 @@ class Search extends SearchDelegate {
           title: Text(
             suggestionList[index],
           ),
-          leading: query.isEmpty ? Icon(Icons.access_time) : SizedBox(),
+          leading: query.isEmpty ? const Icon(Icons.access_time) : const SizedBox(),
           onTap: () {
             selectedResult = suggestionList[index];
             showResults(context);

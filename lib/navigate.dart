@@ -33,11 +33,11 @@ class _NavigateState extends State<Navigate> {
   final List<Widget> _widgetOptions = [
     Home_1(),
     search(),
-    JavaPage(),
-    CPlusPlusPage(),
-    JavascriptPage(),
-    PythonPage(),
-    DartPage(),
+    const JavaPage(),
+    const CPlusPlusPage(),
+    const JavascriptPage(),
+    const PythonPage(),
+    const DartPage(),
   ];
 
   @override
@@ -59,7 +59,7 @@ class _NavigateState extends State<Navigate> {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => search()));
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search),
           )
         ],
         centerTitle: true,
@@ -75,24 +75,24 @@ class _NavigateState extends State<Navigate> {
           showSelectedLabels: false, // <-- HERE
           showUnselectedLabels: false,
           selectedLabelStyle:
-              TextStyle(fontWeight: FontWeight.w500, fontFamily: "Soleil"),
+              const TextStyle(fontWeight: FontWeight.w500, fontFamily: "Soleil"),
           unselectedLabelStyle:
-              TextStyle(fontFamily: "Soleil", color: Colors.white),
+              const TextStyle(fontFamily: "Soleil", color: Colors.white),
           items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            const BottomNavigationBarItem(
               icon: Icon(Icons.star_outline_outlined),
               label: 'Favorite',
             ),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            BottomNavigationBarItem(
+            const BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
           ],
           fixedColor: Theme.of(context).primaryColor,

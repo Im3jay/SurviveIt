@@ -15,10 +15,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           brightness: Brightness.light,
-          primaryColor: Color(0xFF385C7B),
+          primaryColor: const Color(0xFF385C7B),
           primaryColorLight: Colors.white,
           primaryColorDark: Colors.black,
-          textTheme: TextTheme(
+          textTheme: const TextTheme(
               headline1: TextStyle(
                 fontSize: 17,
                 color: Colors.black,
@@ -46,8 +46,10 @@ class FlatButtonWidget extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
 }
+
+

@@ -63,6 +63,12 @@ flutter:
   assets:
     - images/Logo.png
     - images/welcomeBg.png
+    - images/about/den.png
+    - images/about/mika.png
+    - images/about/yvette.png
+    - images/about/shane.png
+    - images/about/jay.png
+    - images/about/developers.png
     - images/Welcome.jpg
     - images/Welcome2.jpg
     - images/home_icon/pythonImage.png

@@ -26,18 +26,18 @@ class _Home_1State extends State<Home_1> {
 
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.indigoAccent.shade700,
+          backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
           actions: <Widget>[
             IconButton(
               onPressed: () {
                 Navigator.push(
                     context, MaterialPageRoute(builder: (context) => search()));
               },
-              icon: Icon(Icons.search),
+              icon: const Icon(Icons.search),
             )
           ],
           centerTitle: true,
-          title: Text('Home'),
+          title: const Text('Home'),
         ),
         body: Container(
             color: Colors.black,
@@ -57,34 +57,37 @@ class _Home_1State extends State<Home_1> {
             fit: BoxFit.cover,
           )), */
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.only(
+                    left: 25,
+                    right: 25,
+                  ),
                   child: GridView(
-                    physics: BouncingScrollPhysics(),
+                    physics: const BouncingScrollPhysics(),
                     children: [
+                     
                       Container(
-                          margin: EdgeInsets.only(left: 0, right: 0, bottom: 0),
+                          margin: const EdgeInsets.all(20),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
                                     splashColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     highlightColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  PythonPage()));
+                                                  const PythonPage()));
                                     },
                                     child: Container(
-                                        padding: EdgeInsets.all(10),
-                                        child: Text('Python',
+                                        child: const Text('First Aid',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
-                                                fontSize: 25,
+                                                fontSize: 15,
                                                 color: Colors.white,
                                                 backgroundColor:
                                                     Colors.transparent,
@@ -92,7 +95,7 @@ class _Home_1State extends State<Home_1> {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                               color: Colors.white, width: 2),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             image: AssetImage(
                                                 'images/home_icon/pythonImage.png'),
                                             fit: BoxFit.fill,
@@ -103,26 +106,26 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: EdgeInsets.only(left: 0, right: 0, bottom: 0),
+                          margin: const EdgeInsets.all(20),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
                                     splashColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     highlightColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  JavaPage()));
+                                                  const JavaPage()));
                                     },
                                     child: Container(
-                                        padding: EdgeInsets.all(10),
-                                        child: Text('Java',
+                                        padding: const EdgeInsets.all(10),
+                                        child: const Text('Java',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -131,7 +134,7 @@ class _Home_1State extends State<Home_1> {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                               color: Colors.white, width: 2),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             image: AssetImage(
                                                 'images/home_icon/javaImage.png'),
                                             fit: BoxFit.fill,
@@ -142,26 +145,26 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: EdgeInsets.only(left: 0, right: 0, bottom: 0),
+                          margin: const EdgeInsets.all(20),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
                                     splashColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     highlightColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  CPlusPlusPage()));
+                                                  const CPlusPlusPage()));
                                     },
                                     child: Container(
-                                        padding: EdgeInsets.all(10),
-                                        child: Text('C++',
+                                        padding: const EdgeInsets.all(10),
+                                        child: const Text('C++',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -170,7 +173,7 @@ class _Home_1State extends State<Home_1> {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                               color: Colors.white, width: 2),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             image: AssetImage(
                                                 'images/home_icon/CPlusPlus.png'),
                                             fit: BoxFit.fill,
@@ -181,26 +184,26 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: EdgeInsets.only(left: 0, right: 0, bottom: 0),
+                          margin: const EdgeInsets.all(20),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
                                     splashColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     highlightColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  DartPage()));
+                                                  const DartPage()));
                                     },
                                     child: Container(
-                                        padding: EdgeInsets.all(10),
-                                        child: Text('Dart',
+                                        padding: const EdgeInsets.all(10),
+                                        child: const Text('Dart',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -209,7 +212,7 @@ class _Home_1State extends State<Home_1> {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                               color: Colors.white, width: 2),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             image: AssetImage(
                                                 'images/home_icon/dart.png'),
                                             fit: BoxFit.fill,
@@ -220,26 +223,26 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: EdgeInsets.only(left: 0, right: 0, bottom: 0),
+                          margin: const EdgeInsets.all(20),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
                                     splashColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     highlightColor:
-                                        Color(0xFF80D8FF).withOpacity(0.2),
+                                        const Color(0xFF80D8FF).withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  JavascriptPage()));
+                                                  const JavascriptPage()));
                                     },
                                     child: Container(
-                                        padding: EdgeInsets.all(10),
-                                        child: Text('JavaScript',
+                                        padding: const EdgeInsets.all(10),
+                                        child: const Text('JavaScript',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -248,7 +251,7 @@ class _Home_1State extends State<Home_1> {
                                         decoration: BoxDecoration(
                                           border: Border.all(
                                               color: Colors.white, width: 2),
-                                          image: DecorationImage(
+                                          image: const DecorationImage(
                                             image: AssetImage(
                                                 'images/home_icon/javascript.png'),
                                             fit: BoxFit.fill,
@@ -259,11 +262,10 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                     ],
-                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 1,
-                        mainAxisSpacing: 15,
                         crossAxisSpacing: 15,
-                        mainAxisExtent: 185),
+                        mainAxisExtent: 175),
                   ),
                 )
               ],
