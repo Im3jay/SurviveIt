@@ -61,7 +61,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    #- images/lilfella.png
+    - images/Logo.png
+    - images/welcomeBg.png
     - images/Welcome.jpg
     - images/Welcome2.jpg
     - images/home_icon/pythonImage.png
