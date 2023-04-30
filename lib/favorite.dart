@@ -114,7 +114,7 @@ class _FavoritePageState extends State<FavoritePage> {
                               style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
-                                  const Color.fromARGB(255, 10, 20, 75),
+                                  const Color.fromARGB(153,114,69,1),
                                 ),
                               ),
                               child: const Icon(
@@ -159,7 +159,7 @@ class _FavoritePageState extends State<FavoritePage> {
                               style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
-                                  Colors.deepPurple,
+                                  Color.fromRGBO(153,114,69,1),
                                 ),
                               ),
                               child: Column(

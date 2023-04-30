@@ -184,7 +184,7 @@ public class PermuteString {
               )
             ],
             centerTitle: true,
-            title: Text('Java'),
+            title: Text('Earthquakes'),
           ),
           body: Container(
             child: ListView(

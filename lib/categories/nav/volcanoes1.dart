@@ -224,7 +224,7 @@ void main() {
               )
             ],
             centerTitle: true,
-            title: const Text(' Dart Programming'),
+            title: const Text('Volcanoes'),
           ),
           body: Container(
             child: ListView(

@@ -172,7 +172,7 @@ int main() {
         ),
         builder: (context, player) => Scaffold(
           appBar: AppBar(
-            title: const Text(' C++ Programming'),
+            title: const Text('Tsunamis'),
             centerTitle: true,
             backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
           ),

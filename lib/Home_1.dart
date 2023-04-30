@@ -58,24 +58,24 @@ class _Home_1State extends State<Home_1> {
           )), */
                 Padding(
                   padding: const EdgeInsets.only(
-                    left: 25,
-                    right: 25,
+                    left: 10,
+                    right: 10,
                   ),
                   child: GridView(
                     physics: const BouncingScrollPhysics(),
                     children: [
-                     
+                      
                       Container(
-                          margin: const EdgeInsets.all(20),
+                          margin: const EdgeInsets.all(25),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
-                                    splashColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
-                                    highlightColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
+                                    splashColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
+                                    highlightColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
@@ -97,7 +97,7 @@ class _Home_1State extends State<Home_1> {
                                               color: Colors.white, width: 2),
                                           image: const DecorationImage(
                                             image: AssetImage(
-                                                'images/home_icon/pythonImage.png'),
+                                                'images/home_icon/firstAid.png'),
                                             fit: BoxFit.fill,
                                           ),
                                           borderRadius:
@@ -106,16 +106,16 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: const EdgeInsets.all(20),
+                          margin: const EdgeInsets.all(25),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
-                                    splashColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
-                                    highlightColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
+                                    splashColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
+                                    highlightColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
@@ -125,7 +125,7 @@ class _Home_1State extends State<Home_1> {
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),
-                                        child: const Text('Java',
+                                        child: const Text('Earthquake',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -136,7 +136,7 @@ class _Home_1State extends State<Home_1> {
                                               color: Colors.white, width: 2),
                                           image: const DecorationImage(
                                             image: AssetImage(
-                                                'images/home_icon/javaImage.png'),
+                                                'images/home_icon/earthquakes.png'),
                                             fit: BoxFit.fill,
                                           ),
                                           borderRadius:
@@ -145,16 +145,16 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: const EdgeInsets.all(20),
+                          margin: const EdgeInsets.all(25),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
-                                    splashColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
-                                    highlightColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
+                                    splashColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
+                                    highlightColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
@@ -164,7 +164,7 @@ class _Home_1State extends State<Home_1> {
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),
-                                        child: const Text('C++',
+                                        child: const Text('Tsunamis',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -175,7 +175,7 @@ class _Home_1State extends State<Home_1> {
                                               color: Colors.white, width: 2),
                                           image: const DecorationImage(
                                             image: AssetImage(
-                                                'images/home_icon/CPlusPlus.png'),
+                                                'images/home_icon/tsunamis.png'),
                                             fit: BoxFit.fill,
                                           ),
                                           borderRadius:
@@ -184,16 +184,16 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: const EdgeInsets.all(20),
+                          margin: const EdgeInsets.all(25),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
-                                    splashColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
-                                    highlightColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
+                                    splashColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
+                                    highlightColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
@@ -203,7 +203,7 @@ class _Home_1State extends State<Home_1> {
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),
-                                        child: const Text('Dart',
+                                        child: const Text('Volcanoes',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -214,7 +214,7 @@ class _Home_1State extends State<Home_1> {
                                               color: Colors.white, width: 2),
                                           image: const DecorationImage(
                                             image: AssetImage(
-                                                'images/home_icon/dart.png'),
+                                                'images/home_icon/volcano.png'),
                                             fit: BoxFit.fill,
                                           ),
                                           borderRadius:
@@ -223,16 +223,16 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                       Container(
-                          margin: const EdgeInsets.all(20),
+                          margin: const EdgeInsets.all(25),
                           child: ClipRRect(
                               borderRadius: BorderRadius.circular(20),
                               child: Material(
                                   color: Colors.transparent,
                                   child: InkWell(
-                                    splashColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
-                                    highlightColor:
-                                        const Color(0xFF80D8FF).withOpacity(0.2),
+                                    splashColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
+                                    highlightColor: const Color(0xFF80D8FF)
+                                        .withOpacity(0.2),
                                     onTap: () {
                                       Navigator.push(
                                           context,
@@ -242,7 +242,7 @@ class _Home_1State extends State<Home_1> {
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),
-                                        child: const Text('JavaScript',
+                                        child: const Text('Emergency Call',
                                             textAlign: TextAlign.center,
                                             style: TextStyle(
                                                 fontSize: 25,
@@ -253,7 +253,7 @@ class _Home_1State extends State<Home_1> {
                                               color: Colors.white, width: 2),
                                           image: const DecorationImage(
                                             image: AssetImage(
-                                                'images/home_icon/javascript.png'),
+                                                'images/home_icon/emergencyCall.png'),
                                             fit: BoxFit.fill,
                                           ),
                                           borderRadius:
@@ -262,10 +262,11 @@ class _Home_1State extends State<Home_1> {
                                         )),
                                   )))),
                     ],
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 1,
-                        crossAxisSpacing: 15,
-                        mainAxisExtent: 175),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 1,
+                            crossAxisSpacing: 15,
+                            mainAxisExtent: 175),
                   ),
                 )
               ],

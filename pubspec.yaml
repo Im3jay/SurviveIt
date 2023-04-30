@@ -69,14 +69,26 @@ flutter:
     - images/about/shane.png
     - images/about/jay.png
     - images/about/developers.png
+
+    - images/first_aid/aspirin.png
+    - images/first_aid/bandAid.png
+    - images/first_aid/safetyPin.png
+    - images/first_aid/cotton.png
+    - images/first_aid/flashlight.png
+    - images/first_aid/gauze.png
+    - images/first_aid/ointment.png
+    - images/first_aid/painkillers.png
+    - images/first_aid/scissors.png
+    - images/first_aid/thermometer.png
+
     - images/Welcome.jpg
     - images/Welcome2.jpg
-    - images/home_icon/pythonImage.png
-    - images/home_icon/javaImage.png
-    - images/home_icon/CPlusPlus.png
-    - images/home_icon/dart.png
-    - images/home_icon/javascript.png
-    - images/home_icon/ruby.png
+
+    - images/home_icon/firstAid.png
+    - images/home_icon/tsunamis.png
+    - images/home_icon/volcano.png
+    - images/home_icon/earthquakes.png
+    - images/home_icon/emergencyCall.png
     - images/ProgrammingB.jpg
     - images/Samples/DataTypes_Java.jpg
     - images/Samples/DataTypes_Dart.jpg
@@ -86,7 +98,6 @@ flutter:
     - images/Samples/seperate2.jpg
     - images/Samples/variable.jpg
     - images/Samples/objectJS.jpg
-    - images/banner.jpg
     - images/homeBackground.png
     - images/Samples/data_types_1.png
     - images/Samples/data_types_2.png
