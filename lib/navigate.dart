@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-import 'categories/cplusplus.dart';
-import 'categories/java.dart';
-import 'categories/javascript.dart';
-import 'categories/python.dart';
-import 'categories/dart.dart';
+import 'categories/tsunamis.dart';
+import 'categories/earthquakes.dart';
+import 'categories/emergencyCall.dart';
+import 'categories/firstAid.dart';
+import 'categories/volcanoes.dart';
 
 import 'Home_1.dart';
 import 'search.dart';
@@ -33,11 +33,11 @@ class _NavigateState extends State<Navigate> {
   final List<Widget> _widgetOptions = [
     Home_1(),
     search(),
-    const JavaPage(),
-    const CPlusPlusPage(),
-    const JavascriptPage(),
-    const PythonPage(),
-    const DartPage(),
+    const EarthquakePage(),
+    const TsunamisPage(),
+    const EmergencyCallPage(),
+    const FirstAidPage(),
+    const VolcanoesPage(),
   ];
 
   @override
@@ -52,7 +52,7 @@ class _NavigateState extends State<Navigate> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigoAccent.shade700,
+        backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
         actions: <Widget>[
           IconButton(
             onPressed: () {

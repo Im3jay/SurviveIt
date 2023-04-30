@@ -18,12 +18,12 @@ class StatelessWidget {
   }
 }
 
-class CPlusPlusNavPage extends StatefulWidget {
+class TsunamisNavPage extends StatefulWidget {
   @override
   _MyCPlusPlusNavPageState createState() => _MyCPlusPlusNavPageState();
 }
 
-class _MyCPlusPlusNavPageState extends State<CPlusPlusNavPage> {
+class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
   late YoutubePlayerController controller;
   static final expanded_text = '''
 #include <iostream>

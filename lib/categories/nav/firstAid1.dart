@@ -18,12 +18,12 @@ class StatelessWidget {
   }
 }
 
-class PythonNavPage extends StatefulWidget {
+class FirstAidNavPage extends StatefulWidget {
   @override
-  _PythonNavPageState createState() => _PythonNavPageState();
+  _FirstAidNavPageState createState() => _FirstAidNavPageState();
 }
 
-class _PythonNavPageState extends State<PythonNavPage> {
+class _FirstAidNavPageState extends State<FirstAidNavPage> {
   late YoutubePlayerController controller;
   static final expanded_text2 = '''
 # Variables

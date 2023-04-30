@@ -1,11 +1,11 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:project1/navigate.dart';
-import 'categories/cplusplus.dart';
-import 'categories/dart.dart';
-import 'categories/java.dart';
-import 'categories/javascript.dart';
-import 'categories/python.dart';
+import 'categories/tsunamis.dart';
+import 'categories/volcanoes.dart';
+import 'categories/earthquakes.dart';
+import 'categories/emergencyCall.dart';
+import 'categories/firstAid.dart';
 import 'search.dart';
 
 class Home_1 extends StatefulWidget {
@@ -81,7 +81,7 @@ class _Home_1State extends State<Home_1> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const PythonPage()));
+                                                  const FirstAidPage()));
                                     },
                                     child: Container(
                                         child: const Text('First Aid',
@@ -121,7 +121,7 @@ class _Home_1State extends State<Home_1> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const JavaPage()));
+                                                  const EarthquakePage()));
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),
@@ -160,7 +160,7 @@ class _Home_1State extends State<Home_1> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const CPlusPlusPage()));
+                                                  const TsunamisPage()));
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),
@@ -199,7 +199,7 @@ class _Home_1State extends State<Home_1> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const DartPage()));
+                                                  const VolcanoesPage()));
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),
@@ -238,7 +238,7 @@ class _Home_1State extends State<Home_1> {
                                           context,
                                           MaterialPageRoute(
                                               builder: (context) =>
-                                                  const JavascriptPage()));
+                                                  const EmergencyCallPage()));
                                     },
                                     child: Container(
                                         padding: const EdgeInsets.all(10),

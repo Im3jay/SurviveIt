@@ -41,6 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
           items: [
             const Icon(Icons.home, color: Colors.white),
             const Icon(Icons.favorite, color: Colors.white),
+            Icon(Icons.message, color: Colors.white),
           ]),
     );
   }

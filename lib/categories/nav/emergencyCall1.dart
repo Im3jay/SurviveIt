@@ -16,12 +16,12 @@ class StatelessWidget {
   }
 }
 
-class JavascriptNavPage extends StatefulWidget {
+class EmergencyCallNavPage extends StatefulWidget {
   @override
-  _JavascriptNavPageState createState() => _JavascriptNavPageState();
+  _EmergencyCallNavPageState createState() => _EmergencyCallNavPageState();
 }
 
-class _JavascriptNavPageState extends State<JavascriptNavPage> {
+class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
   static final expanded_text2 = '''
 // program for a simple calculator
 let result;

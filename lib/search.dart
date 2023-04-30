@@ -1,30 +1,34 @@
 import 'package:flutter/material.dart';
-import 'categories/python.dart';
-import 'categories/dart.dart';
-import 'categories/java.dart';
-import 'categories/cplusplus.dart';
-import 'categories/javascript.dart';
+import 'categories/firstAid.dart';
+import 'categories/volcanoes.dart';
+import 'categories/earthquakes.dart';
+import 'categories/tsunamis.dart';
+import 'categories/emergencyCall.dart';
 import 'home_page.dart';
 import 'favorite.dart';
 
 class search extends StatefulWidget {
   final List<String> list = [
-    "Java",
-    "java",
-    "Dart",
-    "dart",
-    "javascript",
-    "JavaScript",
-    "javaScript",
-    "cplusplus",
-    "c++",
-    "C++",
-    "Cplusplus",
-    "python",
-    "Python",
+    "Earthquake",
+    "earthquake",
+    "Volcanoes",
+    "volcanoes",
+    "Emergency",
+    "emergency",
+    "Call",
+    "call",
+    "First Aid",
+    "first Aid",
+    "First",
+    "first",
+    "Aid",
+    "aid",
+    "Tsunamis",
+    "tsunamis",
+    "Tsunami",
+    "tsunami",
     "Home",
     "Favorites",
-    "Ruby",
     "Home",
     "home",
     "favorite",
@@ -42,7 +46,7 @@ class _SearchState extends State<search> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigoAccent.shade700,
+        backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
         actions: <Widget>[
           IconButton(
             onPressed: () {
@@ -68,26 +72,31 @@ class _SearchState extends State<search> {
 
 class Search extends SearchDelegate {
   void displaySearch(BuildContext context) {
-    if (selectedResult == "Java" || selectedResult == "java") {
+    if (selectedResult == "Earthquake" || selectedResult == "earthquake") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const JavaPage()));
-    } else if (selectedResult == "Dart" || selectedResult == "dart") {
+          context, MaterialPageRoute(builder: (context) => const EarthquakePage()));
+    } else if (selectedResult == "Volcanoes" || selectedResult == "volcanoes") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const DartPage()));
-    } else if (selectedResult == "javaScript" ||
-        selectedResult == "JavaScript" ||
-        selectedResult == "javascript") {
+          context, MaterialPageRoute(builder: (context) => const VolcanoesPage()));
+    } else if (selectedResult == "Emergency" ||
+        selectedResult == "emergency" ||
+        selectedResult == "Call" ||
+        selectedResult == "call") {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const JavascriptPage()));
-    } else if (selectedResult == "python" || selectedResult == "Python") {
+          context, MaterialPageRoute(builder: (context) => const EmergencyCallPage()));
+    } else if (selectedResult == "First Aid" || selectedResult == "first aid" ||
+               selectedResult == "First" ||
+               selectedResult == "first" ||
+               selectedResult == "Aid" ||
+               selectedResult == "aid" ) {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const PythonPage()));
-    } else if (selectedResult == "cplusplus" ||
-        selectedResult == "Cplusplus" ||
-        selectedResult == "c++" ||
-        selectedResult == "C++") {
+          context, MaterialPageRoute(builder: (context) => const FirstAidPage()));
+    } else if (selectedResult == "Tsunamis" ||
+        selectedResult == "tsunamis" ||
+        selectedResult == "Tsunami" ||
+        selectedResult == "tsunami" ) {
       Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const CPlusPlusPage()));
+          context, MaterialPageRoute(builder: (context) => const TsunamisPage()));
     }
     else if (selectedResult == "home" ||
         selectedResult == "Home") {

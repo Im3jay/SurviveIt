@@ -2,24 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../../home_1.dart';
 import '../../search.dart';
-import 'nav/cplusplus1.dart';
+import 'nav/volcanoes1.dart';
 import '../../favorite.dart';
 
-//CPlusPlusPage
-class CPlusPlusPage extends StatefulWidget {
-  const CPlusPlusPage({Key? key}) : super(key: key);
+class VolcanoesPage extends StatefulWidget {
+  const VolcanoesPage({Key? key}) : super(key: key);
   @override
-  _MyCPlusPlusPageState createState() => _MyCPlusPlusPageState();
+  _MyVolcanoesPageState createState() => _MyVolcanoesPageState();
 }
 
-class _MyCPlusPlusPageState extends State<CPlusPlusPage> {
-  //python = 7
+class _MyVolcanoesPageState extends State<VolcanoesPage> {
 
   int _selectedIndex = 2;
   final List<Widget> _widgetOptions = [
     Home_1(),
     FavoritePage(),
-    CPlusPlusNavPage(),
+    VolcanoesNavPage(),
   ];
 
   @override
@@ -42,10 +40,10 @@ class _MyCPlusPlusPageState extends State<CPlusPlusPage> {
           backgroundColor: Colors.white,
           color: const Color.fromRGBO(255, 191, 116, 1),
           animationDuration: const Duration(milliseconds: 300),
-          items: const [
-           Icon(Icons.home, color: Colors.white),
-            Icon(Icons.favorite, color: Colors.white),
-            Icon(Icons.assistant, color: Colors.white),
+          items: [
+            const Icon(Icons.home, color: Colors.white),
+            const Icon(Icons.favorite, color: Colors.white),
+            const Icon(Icons.assistant, color: Colors.white),
           ]),
     );
   }

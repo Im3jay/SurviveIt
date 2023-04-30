@@ -16,12 +16,12 @@ class StatelessWidget {
   }
 }
 
-class JavaNavPage extends StatefulWidget {
+class EarthquakesNavPage extends StatefulWidget {
   @override
-  _JavaNavPageState createState() => _JavaNavPageState();
+  _EarthquakesNavPageState createState() => _EarthquakesNavPageState();
 }
 
-class _JavaNavPageState extends State<JavaNavPage> {
+class _EarthquakesNavPageState extends State<EarthquakesNavPage> {
   static final expanded_text2 = '''
 import java.util.Scanner;
 

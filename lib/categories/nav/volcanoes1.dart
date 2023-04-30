@@ -16,12 +16,12 @@ class StatelessWidget {
   }
 }
 
-class DartNavPage extends StatefulWidget {
+class VolcanoesNavPage extends StatefulWidget {
   @override
-  _DartNavPageState createState() => _DartNavPageState();
+  _VolcanoesNavPageState createState() => _VolcanoesNavPageState();
 }
 
-class _DartNavPageState extends State<DartNavPage> {
+class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
   static final expanded_text2 = '''
 import 'dart:convert';
 import 'dart:io';

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'categories/java.dart';
-import 'categories/dart.dart';
-import 'categories/javascript.dart';
-import 'categories/python.dart';
-import 'categories/cplusplus.dart';
+import 'categories/earthquakes.dart';
+import 'categories/volcanoes.dart';
+import 'categories/emergencyCall.dart';
+import 'categories/firstAid.dart';
+import 'categories/tsunamis.dart';
 
 class FavoritePage extends StatefulWidget {
   _FavoritePageState createState() => _FavoritePageState();
@@ -129,31 +129,31 @@ class _FavoritePageState extends State<FavoritePage> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => const JavaPage()));
+                                          builder: (context) => const EarthquakePage()));
                                 } else if (favoriteDataList[index] == "Dart") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => const DartPage()));
+                                          builder: (context) => const VolcanoesPage()));
                                 } else if (favoriteDataList[index] ==
                                     "JavaScript") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const JavascriptPage()));
+                                              const EmergencyCallPage()));
                                 } else if (favoriteDataList[index] ==
                                     "Python") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => const PythonPage()));
+                                          builder: (context) => const FirstAidPage()));
                                 } else if (favoriteDataList[index] == "C++") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const CPlusPlusPage()));
+                                              const TsunamisPage()));
                                 }
                               },
                               style: ButtonStyle(

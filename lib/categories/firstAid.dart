@@ -2,22 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../../home_1.dart';
 import '../../search.dart';
-import 'nav/dart1.dart';
+import 'nav/firstAid1.dart';
 import '../../favorite.dart';
 
-class DartPage extends StatefulWidget {
-  const DartPage({Key? key}) : super(key: key);
+class FirstAidPage extends StatefulWidget {
+  const FirstAidPage({Key? key}) : super(key: key);
   @override
-  _MyDartPageState createState() => _MyDartPageState();
+  _MyPythonPageState createState() => _MyPythonPageState();
 }
 
-class _MyDartPageState extends State<DartPage> {
+class _MyPythonPageState extends State<FirstAidPage> {
+  //python = 7
 
   int _selectedIndex = 2;
   final List<Widget> _widgetOptions = [
     Home_1(),
     FavoritePage(),
-    DartNavPage(),
+    FirstAidNavPage(),
   ];
 
   @override
@@ -40,10 +41,10 @@ class _MyDartPageState extends State<DartPage> {
           backgroundColor: Colors.white,
           color: const Color.fromRGBO(255, 191, 116, 1),
           animationDuration: const Duration(milliseconds: 300),
-          items: [
-            const Icon(Icons.home, color: Colors.white),
-            const Icon(Icons.favorite, color: Colors.white),
-            const Icon(Icons.assistant, color: Colors.white),
+          items: const [
+            Icon(Icons.home, color: Colors.white),
+            Icon(Icons.favorite, color: Colors.white),
+            Icon(Icons.assistant, color: Colors.white),
           ]),
     );
   }

@@ -2,23 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../../home_1.dart';
 import '../../search.dart';
-import 'nav/javaScript1.dart';
+import 'nav/emergencyCall1.dart';
 import '../../favorite.dart';
 
-class JavascriptPage extends StatefulWidget {
-  const JavascriptPage({Key? key}) : super(key: key);
+class EmergencyCallPage extends StatefulWidget {
+  const EmergencyCallPage({Key? key}) : super(key: key);
   @override
-  _JavascriptPageState createState() => _JavascriptPageState();
+  _EmergencyCallPageState createState() => _EmergencyCallPageState();
 }
 
-class _JavascriptPageState extends State<JavascriptPage> {
+class _EmergencyCallPageState extends State<EmergencyCallPage> {
   //python = 7
 
   int _selectedIndex = 2;
   final List<Widget> _widgetOptions = [
     Home_1(),
     FavoritePage(),
-    JavascriptNavPage(),
+    EmergencyCallNavPage(),
   ];
 
   @override

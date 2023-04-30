@@ -2,23 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import '../../home_1.dart';
 import '../../search.dart';
-import 'nav/python1.dart';
+import 'nav/tsunamis1.dart';
 import '../../favorite.dart';
 
-class PythonPage extends StatefulWidget {
-  const PythonPage({Key? key}) : super(key: key);
+//CPlusPlusPage
+class TsunamisPage extends StatefulWidget {
+  const TsunamisPage({Key? key}) : super(key: key);
   @override
-  _MyPythonPageState createState() => _MyPythonPageState();
+  _MyCPlusPlusPageState createState() => _MyCPlusPlusPageState();
 }
 
-class _MyPythonPageState extends State<PythonPage> {
+class _MyCPlusPlusPageState extends State<TsunamisPage> {
   //python = 7
 
   int _selectedIndex = 2;
   final List<Widget> _widgetOptions = [
     Home_1(),
     FavoritePage(),
-    PythonNavPage(),
+    TsunamisNavPage(),
   ];
 
   @override
@@ -42,7 +43,7 @@ class _MyPythonPageState extends State<PythonPage> {
           color: const Color.fromRGBO(255, 191, 116, 1),
           animationDuration: const Duration(milliseconds: 300),
           items: const [
-            Icon(Icons.home, color: Colors.white),
+           Icon(Icons.home, color: Colors.white),
             Icon(Icons.favorite, color: Colors.white),
             Icon(Icons.assistant, color: Colors.white),
           ]),
