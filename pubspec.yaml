@@ -81,6 +81,23 @@ flutter:
     - images/first_aid/scissors.png
     - images/first_aid/thermometer.png
 
+    - images/earthquakes_img/duck.png
+    - images/earthquakes_img/cover.png
+    - images/earthquakes_img/hold.png
+
+    - images/tsunamis_img/Ear.png
+    - images/tsunamis_img/Earthquake.png
+    - images/tsunamis_img/Sea.png
+
+    - images/volcano_img/Clothes.png
+    - images/volcano_img/Face mask.png
+    - images/volcano_img/First aid kit.png
+    - images/volcano_img/Glass.png
+    - images/volcano_img/Pet.png
+    - images/volcano_img/Radio.png
+    - images/volcano_img/Telephone.png
+    - images/volcano_img/Window.png
+
     - images/Welcome.jpg
     - images/Welcome2.jpg
 

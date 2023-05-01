@@ -38,10 +38,10 @@ class _MyEarthquakePageState extends State<EarthquakePage> {
             backgroundColor: Colors.white,
             color: const Color.fromRGBO(255, 191, 116, 1),
             animationDuration: const Duration(milliseconds: 300),
-            items: [
-              const Icon(Icons.home, color: Colors.white),
-              const Icon(Icons.favorite, color: Colors.white),
-              const Icon(Icons.assistant, color: Colors.white),
+            items: const [
+              Icon(Icons.home, color: Colors.white),
+              Icon(Icons.favorite, color: Colors.white),
+              Icon(Icons.assistant, color: Colors.white),
             ]));
   }
 
