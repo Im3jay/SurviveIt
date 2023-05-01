@@ -18,6 +18,78 @@ class AboutUsPage extends StatelessWidget {
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
+                    const SizedBox(height: 20),
+                    Container(
+                            padding: const EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(255, 205, 147, 1),
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            child: const Text(
+                              '   What is SurviveIt?                               ',
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          Container(
+                            margin: const EdgeInsets.only(left: 30, right: 30,),
+                            padding: const EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                              
+                              color: const Color.fromRGBO(249,238,223,1),
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            child: const Text(
+                              '''This application is designed to help your children help themselves. Whether that\’s in an emergency scenario or an everyday situation where basic first aid is necessary. Teaching first aid to children is something that will make you and your children more safe and confident in the outdoors. ''',
+                              textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.black,
+                              ),
+                             
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                    Container(
+                            padding: const EdgeInsets.symmetric(vertical: 10),
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(255, 205, 147, 1),
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            child: const Text(
+                              '   Why use SurviveIt?                               ',
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                              ),
+                              textAlign: TextAlign.left,
+                            ),
+                          ),
+                          const SizedBox(height: 20),
+                          Container(
+                            margin: const EdgeInsets.only(left: 30, right: 30,),
+                            padding: const EdgeInsets.all(15),
+                            decoration: BoxDecoration(
+                              
+                              color: const Color.fromRGBO(249,238,223,1),
+                              borderRadius: BorderRadius.circular(25),
+                            ),
+                            child: const Text(
+                              '''The purpose of SurviveIt helps users understand and give knowledge in handling the medical emergencies as quickly as possible and. In an emergency, a delay of just a single minute can cause irreconcilable damage. These kits offer basic and instant care for common medical injuries like injuries, burns, cuts etc. ''',
+                              textAlign: TextAlign.justify,
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.black,
+                              ),
+                             
+                            ),
+                          ),
                     Image.asset(
                       'images/about/developers.png',
                       width: 300,
@@ -209,6 +281,9 @@ class AboutUsPage extends StatelessWidget {
                               // Other widgets in the column
                             ],
                           ),
+
+
+                          
                         ],
                       ),
                     )

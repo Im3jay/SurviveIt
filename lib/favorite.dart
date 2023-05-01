@@ -125,30 +125,30 @@ class _FavoritePageState extends State<FavoritePage> {
                             const SizedBox(width: 10),
                             ElevatedButton(
                               onPressed: () {
-                                if (favoriteDataList[index] == "Java") {
+                                if (favoriteDataList[index] == "First Aid") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) => const EarthquakePage()));
-                                } else if (favoriteDataList[index] == "Dart") {
+                                } else if (favoriteDataList[index] == "Earthquakes") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) => const VolcanoesPage()));
                                 } else if (favoriteDataList[index] ==
-                                    "JavaScript") {
+                                    "Volcanoes") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
                                               const EmergencyCallPage()));
                                 } else if (favoriteDataList[index] ==
-                                    "Python") {
+                                    "Tsunamis") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) => const FirstAidPage()));
-                                } else if (favoriteDataList[index] == "C++") {
+                                } else if (favoriteDataList[index] == "Emergency Call") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(

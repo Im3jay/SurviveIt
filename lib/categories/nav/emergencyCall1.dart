@@ -69,21 +69,20 @@ class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
   List<String> mainDataList = [
     "NDDMRC",
     "Police Station",
-    "Red Cross",
+    "Red Cross QC",
     "Hospital",
     "MMDA",
 	"Fire Station",
   ];
 
    List<String> numberList = [
-    '09964803315',
-    '09964803356',
-    '09964803357',
-    '09964803358',
-    '09964803359',
-    '09964803351',
+    '0289111496',
+	  '09178403925',
+    '143',
+    '0288630800'
+    '136',
+    '89288363',
   ];
-
 
   static List<String> emergencyCallDataList = [];
 
@@ -126,7 +125,6 @@ class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
                       ),
                       
                       InkWell(
-                        // onTap : _callNumber(numberList[index]),
                         onTap: () {
                           setState(() {
                              
