@@ -98,13 +98,280 @@ class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
                 const SizedBox(height: 20),
-                
-                
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(249, 238, 223, 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade600,
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-4.0, -4.0),
+                          blurRadius: 30.0,
+                          spreadRadius: 1.0,
+                        )
+                      ],
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(15),
+                  child: Row(
+                    children: [
+                      const SizedBox(width: 30),
+                      const Expanded(
+                        child: Text(
+                          'NDRRMC',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                        ),
+                      ),
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                            AssetImage('images/volcano_img/telephone.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(249, 238, 223, 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade600,
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-4.0, -4.0),
+                          blurRadius: 30.0,
+                          spreadRadius: 1.0,
+                        )
+                      ],
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(15),
+                  child: Row(
+                    children: [
+                      const SizedBox(width: 30),
+                      const Expanded(
+                        child: Text(
+                          'Police Station',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                        ),
+                      ),
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                            AssetImage('images/volcano_img/telephone.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(249, 238, 223, 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade600,
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-4.0, -4.0),
+                          blurRadius: 30.0,
+                          spreadRadius: 1.0,
+                        )
+                      ],
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(15),
+                  child: Row(
+                    children: [
+                      const SizedBox(width: 30),
+                      const Expanded(
+                        child: Text(
+                          'Red Cross',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                        ),
+                      ),
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                            AssetImage('images/volcano_img/telephone.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(249, 238, 223, 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade600,
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-4.0, -4.0),
+                          blurRadius: 30.0,
+                          spreadRadius: 1.0,
+                        )
+                      ],
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(15),
+                  child: Row(
+                    children: [
+                      const SizedBox(width: 30),
+                      const Expanded(
+                        child: Text(
+                          'Hospital',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                        ),
+                      ),
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                            AssetImage('images/volcano_img/telephone.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(249, 238, 223, 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade600,
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-4.0, -4.0),
+                          blurRadius: 30.0,
+                          spreadRadius: 1.0,
+                        )
+                      ],
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(15),
+                  child: Row(
+                    children: [
+                      const SizedBox(width: 30),
+                      const Expanded(
+                        child: Text(
+                          'MMDA',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                        ),
+                      ),
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                            AssetImage('images/volcano_img/telephone.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromRGBO(249, 238, 223, 1),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.shade600,
+                          offset: Offset(2.0, 2.0),
+                          blurRadius: 15.0,
+                          spreadRadius: 1.0,
+                        ),
+                        BoxShadow(
+                          color: Colors.white,
+                          offset: Offset(-4.0, -4.0),
+                          blurRadius: 30.0,
+                          spreadRadius: 1.0,
+                        )
+                      ],
+                      borderRadius: BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(15),
+                  child: Row(
+                    children: [
+                      const SizedBox(width: 30),
+                      const Expanded(
+                        child: Text(
+                          'Fire Station',
+                          textAlign: TextAlign.left,
+                          style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                        ),
+                      ),
+                      Container(
+                        width: 60,
+                        height: 60,
+                        decoration: BoxDecoration(
+                          image: DecorationImage(
+                            image:
+                            AssetImage('images/volcano_img/telephone.png'),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
           backgroundColor: Colors.white,
         ),
-      );
+  );
 
 }
