@@ -40,22 +40,9 @@ class _Home_1State extends State<Home_1> {
           title: const Text('Home'),
         ),
         body: Container(
-            color: Colors.black,
+            color: Colors.white,
             child: Stack(
               children: [
-                Positioned.fill(
-                  child: Opacity(
-                    opacity: 0.3,
-                    child: Image.asset('images/homeBackground.png',
-                        fit: BoxFit.cover),
-                  ),
-                ),
-                /* decoration: BoxDecoration(
-              image: DecorationImage(
-            image: NetworkImage(
-                "https://images.unsplash.com/photo-1581091878330-f5cf2a3b1564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
-            fit: BoxFit.cover,
-          )), */
                 Padding(
                   padding: const EdgeInsets.only(
                     left: 10,
@@ -64,203 +51,206 @@ class _Home_1State extends State<Home_1> {
                   child: GridView(
                     physics: const BouncingScrollPhysics(),
                     children: [
-                      
-                      Container(
+                      GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                const FirstAidPage()));
+                      },
+                        child :
+                        Container(
+                          decoration: BoxDecoration(
+                              color: const Color.fromRGBO(249, 238, 223, 1),
+                              borderRadius: BorderRadius.all(Radius.circular(10))),
+                          padding: const EdgeInsets.all(15),
                           margin: const EdgeInsets.all(25),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Material(
-                                  color: Colors.transparent,
-                                  child: InkWell(
-                                    splashColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    highlightColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    onTap: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const FirstAidPage()));
-                                    },
-                                    child: Container(
-                                        child: const Text('First Aid',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 15,
-                                                color: Colors.white,
-                                                backgroundColor:
-                                                    Colors.transparent,
-                                                fontWeight: FontWeight.bold)),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                              color: Colors.white, width: 2),
-                                          image: const DecorationImage(
-                                            image: AssetImage(
-                                                'images/home_icon/firstAid.png'),
-                                            fit: BoxFit.fill,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                          color: Colors.blue[400],
-                                        )),
-                                  )))),
-                      Container(
-                          margin: const EdgeInsets.all(25),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Material(
-                                  color: Colors.transparent,
-                                  child: InkWell(
-                                    splashColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    highlightColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    onTap: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const EarthquakePage()));
-                                    },
-                                    child: Container(
-                                        padding: const EdgeInsets.all(10),
-                                        child: const Text('Earthquake',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 25,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold)),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                              color: Colors.white, width: 2),
-                                          image: const DecorationImage(
-                                            image: AssetImage(
-                                                'images/home_icon/earthquakes.png'),
-                                            fit: BoxFit.fill,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                          color: Colors.blue[400],
-                                        )),
-                                  )))),
-                      Container(
-                          margin: const EdgeInsets.all(25),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Material(
-                                  color: Colors.transparent,
-                                  child: InkWell(
-                                    splashColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    highlightColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    onTap: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const TsunamisPage()));
-                                    },
-                                    child: Container(
-                                        padding: const EdgeInsets.all(10),
-                                        child: const Text('Tsunamis',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 25,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold)),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                              color: Colors.white, width: 2),
-                                          image: const DecorationImage(
-                                            image: AssetImage(
-                                                'images/home_icon/tsunamis.png'),
-                                            fit: BoxFit.fill,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                          color: Colors.blue[400],
-                                        )),
-                                  )))),
-                      Container(
-                          margin: const EdgeInsets.all(25),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Material(
-                                  color: Colors.transparent,
-                                  child: InkWell(
-                                    splashColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    highlightColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    onTap: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const VolcanoesPage()));
-                                    },
-                                    child: Container(
-                                        padding: const EdgeInsets.all(10),
-                                        child: const Text('Volcanoes',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 25,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold)),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                              color: Colors.white, width: 2),
-                                          image: const DecorationImage(
-                                            image: AssetImage(
-                                                'images/home_icon/volcano.png'),
-                                            fit: BoxFit.fill,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                          color: Colors.blue[400],
-                                        )),
-                                  )))),
-                      Container(
-                          margin: const EdgeInsets.all(25),
-                          child: ClipRRect(
-                              borderRadius: BorderRadius.circular(20),
-                              child: Material(
-                                  color: Colors.transparent,
-                                  child: InkWell(
-                                    splashColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    highlightColor: const Color(0xFF80D8FF)
-                                        .withOpacity(0.2),
-                                    onTap: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) =>
-                                                  const EmergencyCallPage()));
-                                    },
-                                    child: Container(
-                                        padding: const EdgeInsets.all(10),
-                                        child: const Text('Emergency Call',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: 25,
-                                                color: Colors.white,
-                                                fontWeight: FontWeight.bold)),
-                                        decoration: BoxDecoration(
-                                          border: Border.all(
-                                              color: Colors.white, width: 2),
-                                          image: const DecorationImage(
-                                            image: AssetImage(
-                                                'images/home_icon/emergencyCall.png'),
-                                            fit: BoxFit.fill,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(20),
-                                          color: Colors.blue[400],
-                                        )),
-                                  )))),
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 100,
+                                height: 100,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                    image:
+                                    AssetImage('images/home_icon/firstAid.png'),
+                                    fit: BoxFit.cover,
+                                  ),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                              ),
+                              const SizedBox(width: 30),
+                              const Expanded(
+                                child: Text(
+                                  'First Aid',
+                                  style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                                ),
+                              ),
+                            ],
+                          )
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const EarthquakePage()));
+                        },
+                        child :
+                        Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromRGBO(249, 238, 223, 1),
+                                borderRadius: BorderRadius.all(Radius.circular(10))),
+                            padding: const EdgeInsets.all(15),
+                            margin: const EdgeInsets.all(25),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 100,
+                                  height: 100,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image:
+                                      AssetImage('images/home_icon/earthquakes.png'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                ),
+                                const SizedBox(width: 30),
+                                const Expanded(
+                                  child: Text(
+                                    'Earthquakes',
+                                    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                                  ),
+                                ),
+                              ],
+                            )
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const TsunamisPage()));
+                        },
+                        child :
+                        Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromRGBO(249, 238, 223, 1),
+                                borderRadius: BorderRadius.all(Radius.circular(10))),
+                            padding: const EdgeInsets.all(15),
+                            margin: const EdgeInsets.all(25),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 100,
+                                  height: 100,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image:
+                                      AssetImage('images/home_icon/tsunamis.png'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                ),
+                                const SizedBox(width: 30),
+                                const Expanded(
+                                  child: Text(
+                                    'Tsunamis',
+                                    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                                  ),
+                                ),
+                              ],
+                            )
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const VolcanoesPage()));
+                        },
+                        child :
+                        Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromRGBO(249, 238, 223, 1),
+                                borderRadius: BorderRadius.all(Radius.circular(10))),
+                            padding: const EdgeInsets.all(15),
+                            margin: const EdgeInsets.all(25),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 100,
+                                  height: 100,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image:
+                                      AssetImage('images/home_icon/volcano.png'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                ),
+                                const SizedBox(width: 30),
+                                const Expanded(
+                                  child: Text(
+                                    'Volcanoes',
+                                    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                                  ),
+                                ),
+                              ],
+                            )
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                  const EmergencyCallPage()));
+                        },
+                        child :
+                        Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromRGBO(249, 238, 223, 1),
+                                borderRadius: BorderRadius.all(Radius.circular(10))),
+                            padding: const EdgeInsets.all(15),
+                            margin: const EdgeInsets.all(25),
+                            child: Row(
+                              children: [
+                                Container(
+                                  width: 100,
+                                  height: 100,
+                                  decoration: BoxDecoration(
+                                    image: DecorationImage(
+                                      image:
+                                      AssetImage('images/home_icon/emergencyCall.png'),
+                                      fit: BoxFit.cover,
+                                    ),
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                ),
+                                const SizedBox(width: 30),
+                                const Expanded(
+                                  child: Text(
+                                    'Emergency Call',
+                                    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                                  ),
+                                ),
+                              ],
+                            )
+                        ),
+                      ),
                     ],
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
@@ -272,6 +262,8 @@ class _Home_1State extends State<Home_1> {
               ],
 
               //
-            )));
+            )
+        )
+    );
   }
 }
