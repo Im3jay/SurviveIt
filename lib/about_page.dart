@@ -13,7 +13,7 @@ class AboutUsPage extends StatelessWidget {
         body: SingleChildScrollView(
             child: Stack(children: <Widget>[
           Container(
-              height: 1800,
+              height: 1300,
               width: double.infinity,
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
