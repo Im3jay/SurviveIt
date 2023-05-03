@@ -123,6 +123,21 @@ flutter:
     - images/Samples/java_class.jpg
     - images/Samples/class_dart.jpg
 
+    - images/quiz_assets/cotton.png
+    - images/quiz_assets/cover.png
+    - images/quiz_assets/Earthquake.png
+    - images/quiz_assets/earthquakes.png
+    - images/quiz_assets/emergencyCall.png
+    - images/quiz_assets/gauze.png
+    - images/quiz_assets/painkillers.png
+    - images/quiz_assets/Pet.png
+    - images/quiz_assets/quizStart.png
+    - images/quiz_assets/scissors.png
+    - images/quiz_assets/Sea.png
+    - images/quiz_assets/thermometer.png
+    - images/quiz_assets/tsunamis.png
+    - images/quiz_assets/volcano.png
+    - images/quiz_assets/firstAid.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

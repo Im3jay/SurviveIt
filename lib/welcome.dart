@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project1/about_page.dart';
 import 'package:project1/home_page.dart';
+import 'package:project1/startquiz.dart';
 
 class WelcomePage extends StatelessWidget {
   @override
@@ -84,7 +85,7 @@ class WelcomePage extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => AboutUsPage()),
+                              builder: (context) => StartQuiz()),
                         );
                       },
                       style: ElevatedButton.styleFrom(
