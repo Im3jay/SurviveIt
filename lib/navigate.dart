@@ -6,7 +6,7 @@ import 'categories/emergencyCall.dart';
 import 'categories/firstAid.dart';
 import 'categories/volcanoes.dart';
 
-import 'Home_1.dart';
+import 'home1.dart';
 import 'search.dart';
 
 void mary(int g) {
@@ -47,8 +47,6 @@ class _NavigateState extends State<Navigate> {
 
   @override
   Widget build(BuildContext context) {
-    //final PythonImage =
-    //   'https://www.freepngimg.com/download/android/72537-icons-python-programming-computer-social-tutorial.png';
 
     return Scaffold(
       appBar: AppBar(
@@ -78,21 +76,21 @@ class _NavigateState extends State<Navigate> {
               const TextStyle(fontWeight: FontWeight.w500, fontFamily: "Soleil"),
           unselectedLabelStyle:
               const TextStyle(fontFamily: "Soleil", color: Colors.white),
-          items: <BottomNavigationBarItem>[
-            const BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-            const BottomNavigationBarItem(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(
               icon: Icon(Icons.star_outline_outlined),
               label: 'Favorite',
             ),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
-            const BottomNavigationBarItem(
+            BottomNavigationBarItem(
                 icon: Icon(Icons.brightness_1), label: 'Home'),
           ],
           fixedColor: Theme.of(context).primaryColor,

@@ -22,16 +22,16 @@ class WelcomePage extends StatelessWidget {
                 children: [
                   CircleAvatar(
                     backgroundColor: Colors.transparent,
+                    radius: 90,
                     child: ClipOval(
                       child: Image.asset('images/Logo.png',
                           width: 150, height: 150, fit: BoxFit.cover),
                     ),
-                    radius: 90,
                   ),
                   Row(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        const Text(
+                      children: const <Widget>[
+                        Text(
                           'SurviveIt',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -39,7 +39,7 @@ class WelcomePage extends StatelessWidget {
                               fontSize: 35,
                               fontWeight: FontWeight.bold),
                         ),
-                        const Text(
+                        Text(
                           'Kids',
                           style: TextStyle(
                               color: Color.fromRGBO(249, 156, 35, 1),
@@ -66,15 +66,15 @@ class WelcomePage extends StatelessWidget {
                                 },
                                 child: Container(
                                     padding: const EdgeInsets.all(15),
+                                    decoration: const BoxDecoration(
+                                      color: Color.fromRGBO(255, 138, 0, 1),
+                                    ),
                                     child: const Text('Start Learning!',
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                             fontSize: 17,
                                             color: Colors.white,
-                                            fontWeight: FontWeight.bold)),
-                                    decoration: const BoxDecoration(
-                                      color: Color.fromRGBO(255, 138, 0, 1),
-                                    )),
+                                            fontWeight: FontWeight.bold))),
                               )))),
                   const SizedBox(height: 10),
                   Padding(

@@ -89,18 +89,18 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.all(16),
               children: <Widget>[
-                 SizedBox(height: 10),
-                Text('What is Volcano?',
+                 const SizedBox(height: 10),
+                const Text('What is Volcano?',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
-                  decoration: BoxDecoration(
-                      color: const Color.fromRGBO(249, 238, 223, 1),
+                  decoration: const BoxDecoration(
+                      color: Color.fromRGBO(249, 238, 223, 1),
                       boxShadow: [
                         BoxShadow(
                           color: Color(0xFFB4AAAA),
@@ -116,8 +116,8 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         )
                       ],
                       borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       '''A volcano is a land form (usually a mountain) where molten rock erupts through the surface of the planet.
                          ''',
                       textAlign: TextAlign.justify,
@@ -127,8 +127,8 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 20),
-                Text('To do during Volcanic Eruption',
+                const SizedBox(height: 20),
+                const Text('To do during Volcanic Eruption',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 22,
@@ -136,7 +136,7 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                       color: Color.fromRGBO(227,64,64,1),
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Container(
                   padding: const EdgeInsets.all(15),
                   child: Row(
@@ -145,7 +145,7 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
+                          color: const Color.fromARGB(255, 251, 241, 241),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade600,
@@ -153,7 +153,7 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/Clothes.png'),
                             fit: BoxFit.cover,
@@ -183,7 +183,7 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
+                          color: const Color.fromARGB(255, 251, 241, 241),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade600,
@@ -191,7 +191,7 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/Radio.png'),
                             fit: BoxFit.cover,
@@ -221,15 +221,15 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
-                          boxShadow: [
+                          color: const Color.fromARGB(255, 251, 241, 241),
+                          boxShadow: const [
                             BoxShadow(
                               color: Color.fromARGB(255, 117, 117, 117),
-                              offset: const Offset(4.0, 4.0),
+                              offset: Offset(4.0, 4.0),
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/Face mask.png'),
                             fit: BoxFit.cover,
@@ -259,15 +259,15 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
-                          boxShadow: [
+                          color: const Color.fromARGB(255, 251, 241, 241),
+                          boxShadow: const [
                             BoxShadow(
                               color: Color.fromARGB(255, 117, 117, 117),
-                              offset: const Offset(4.0, 4.0),
+                              offset: Offset(4.0, 4.0),
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/Window.png'),
                             fit: BoxFit.cover,
@@ -297,15 +297,15 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
-                          boxShadow: [
+                          color: const Color.fromARGB(255, 251, 241, 241),
+                          boxShadow: const [
                             BoxShadow(
                               color: Color.fromARGB(255, 117, 117, 117),
-                              offset: const Offset(4.0, 4.0),
+                              offset: Offset(4.0, 4.0),
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/Glass.png'),
                             fit: BoxFit.cover,
@@ -335,15 +335,15 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
-                          boxShadow: [
+                          color: const Color.fromARGB(255, 251, 241, 241),
+                          boxShadow: const [
                             BoxShadow(
                               color: Color.fromARGB(255, 117, 117, 117),
-                              offset: const Offset(4.0, 4.0),
+                              offset: Offset(4.0, 4.0),
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/Telephone.png'),
                             fit: BoxFit.cover,
@@ -373,15 +373,15 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
-                          boxShadow: [
+                          color: const Color.fromARGB(255, 251, 241, 241),
+                          boxShadow: const [
                             BoxShadow(
                               color: Color.fromARGB(255, 117, 117, 117),
-                              offset: const Offset(4.0, 4.0),
+                              offset: Offset(4.0, 4.0),
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/First aid kit.png'),
                             fit: BoxFit.cover,
@@ -411,15 +411,15 @@ class _VolcanoesNavPageState extends State<VolcanoesNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
-                          boxShadow: [
+                          color: const Color.fromARGB(255, 251, 241, 241),
+                          boxShadow: const [
                             BoxShadow(
                               color: Color.fromARGB(255, 117, 117, 117),
-                              offset: const Offset(4.0, 4.0),
+                              offset: Offset(4.0, 4.0),
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/volcano_img/Pet.png'),
                             fit: BoxFit.cover,

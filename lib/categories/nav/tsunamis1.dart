@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/gestures.dart';
@@ -66,24 +65,33 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
             title: const Text('Tsunamis'),
             centerTitle: true,
             backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
+            actions: <Widget>[
+              IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => search()));
+                },
+                icon: const Icon(Icons.search),
+              )
+            ],
           ),
           body: Container(
             child: ListView(
               physics: const BouncingScrollPhysics(),
               padding: const EdgeInsets.all(16),
               children: <Widget>[
-                SizedBox(height: 10),
-                Text('What is Tsunami?',
+                const SizedBox(height: 10),
+                const Text('What is Tsunami?',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
-                  decoration: BoxDecoration(
-                      color: const Color.fromRGBO(249, 238, 223, 1),
+                  decoration: const BoxDecoration(
+                      color: Color.fromRGBO(249, 238, 223, 1),
                       boxShadow: [
                         BoxShadow(
                           color: Color(0xFFB4AAAA),
@@ -99,8 +107,8 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                         )
                       ],
                       borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       '''A series of waves caused by an earthquake, underwater volcanic eruption, landslide or other abrupt disturbance.''',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -109,8 +117,8 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 20),
-                Text('Natural Tsunami Warning Signs',
+                const SizedBox(height: 20),
+                const Text('Natural Tsunami Warning Signs',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 22,
@@ -118,7 +126,7 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                       color: Color.fromRGBO(227,64,64,1),
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Container(
                   padding: const EdgeInsets.all(15),
                   child: Row(
@@ -127,7 +135,7 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                         width: 100,
                         height: 100,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
+                          color: const Color.fromARGB(255, 251, 241, 241),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade600,
@@ -135,7 +143,7 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/tsunamis_img/Earthquake.png',),
                           
@@ -165,7 +173,7 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
+                          color: const Color.fromARGB(255, 251, 241, 241),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade600,
@@ -173,7 +181,7 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/tsunamis_img/Sea.png'),
                             fit: BoxFit.cover,
@@ -203,15 +211,15 @@ class _MyCPlusPlusNavPageState extends State<TsunamisNavPage> {
                         width: 90,
                         height: 90,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 251, 241, 241),
-                          boxShadow: [
+                          color: const Color.fromARGB(255, 251, 241, 241),
+                          boxShadow: const [
                             BoxShadow(
                               color: Color.fromARGB(255, 117, 117, 117),
-                              offset: const Offset(4.0, 4.0),
+                              offset: Offset(4.0, 4.0),
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/tsunamis_img/Ear.png'),
                             fit: BoxFit.cover,

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'favorite.dart';
-import 'Home_1.dart';
-import 'about_page.dart';
+import 'home1.dart';
 import '/categories/help_page.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -41,9 +40,9 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Colors.white,
           color: const Color.fromRGBO(255,191,116,1),
           animationDuration: const Duration(milliseconds: 300),
-          items: [
-            const Icon(Icons.home, color: Colors.white),
-            const Icon(Icons.favorite, color: Colors.white),
+          items: const [
+            Icon(Icons.home, color: Colors.white),
+            Icon(Icons.favorite, color: Colors.white),
             Icon(Icons.message, color: Colors.white),
           ]),
     );

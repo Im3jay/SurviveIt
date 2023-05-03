@@ -72,53 +72,53 @@ class _EarthquakesNavPageState extends State<EarthquakesNavPage> {
         ),
         builder: (context, player) => Scaffold(
           appBar: AppBar(
-            backgroundColor: Color.fromRGBO(255, 191, 116, 1),
+            backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
             actions: <Widget>[
               IconButton(
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => search()));
                 },
-                icon: Icon(Icons.search),
+                icon: const Icon(Icons.search),
               )
             ],
             centerTitle: true,
-            title: Text('Earthquakes'),
+            title: const Text('Earthquakes'),
           ),
           body: Container(
             child: ListView(
-              physics: BouncingScrollPhysics(),
-              padding: EdgeInsets.all(16),
+              physics: const BouncingScrollPhysics(),
+              padding: const EdgeInsets.all(16),
               children: <Widget>[
-                SizedBox(height: 10),
-                Text('What is Earthquake?',
+                const SizedBox(height: 10),
+                const Text('What is Earthquake?',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.black,
                         backgroundColor: Colors.transparent,
                         fontWeight: FontWeight.bold)),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 Container(
                   decoration: BoxDecoration(
                       color: const Color.fromRGBO(249, 238, 223, 1),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.grey.shade600,
-                          offset: Offset(2.0, 2.0),
+                          offset: const Offset(2.0, 2.0),
                           blurRadius: 15.0,
                           spreadRadius: 1.0,
                         ),
-                        BoxShadow(
+                        const BoxShadow(
                           color: Colors.white,
                           offset: Offset(-4.0, -4.0),
                           blurRadius: 30.0,
                           spreadRadius: 1.0,
                         )
                       ],
-                      borderRadius: BorderRadius.all(Radius.circular(10))),
-                  padding: EdgeInsets.all(8),
-                  child: Text(
+                      borderRadius: const BorderRadius.all(Radius.circular(10))),
+                  padding: const EdgeInsets.all(8),
+                  child: const Text(
                       '''An earthquake is an intense shaking of Earth's surface. The shaking is caused by movements in Earth's outermost layer.''',
                       textAlign: TextAlign.justify,
                       style: TextStyle(
@@ -127,8 +127,8 @@ class _EarthquakesNavPageState extends State<EarthquakesNavPage> {
                         backgroundColor: Colors.transparent,
                       )),
                 ),
-                SizedBox(height: 20),
-                Text('Things to remember during Earthquakes!',
+                const SizedBox(height: 20),
+                const Text('Things to remember during Earthquakes!',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 19,
@@ -136,7 +136,7 @@ class _EarthquakesNavPageState extends State<EarthquakesNavPage> {
                       color: Color.fromRGBO(227,64,64,1),
                       backgroundColor: Colors.transparent,
                     )),
-                SizedBox(height: 5),
+                const SizedBox(height: 5),
                 Container(
                   padding: const EdgeInsets.all(15),
                   child: Row(
@@ -153,7 +153,7 @@ class _EarthquakesNavPageState extends State<EarthquakesNavPage> {
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/earthquakes_img/duck.png'),
                             fit: BoxFit.cover,
@@ -190,7 +190,7 @@ class _EarthquakesNavPageState extends State<EarthquakesNavPage> {
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/earthquakes_img/cover.png'),
                             fit: BoxFit.cover,
@@ -228,7 +228,7 @@ class _EarthquakesNavPageState extends State<EarthquakesNavPage> {
                               blurRadius: 10.0,
                             ),
                           ],
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image:
                                 AssetImage('images/earthquakes_img/hold.png'),
                             fit: BoxFit.cover,

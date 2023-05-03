@@ -1,14 +1,6 @@
-import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 import '../../search.dart';
-import 'dart:io';
-import '/categories/earthquakes.dart';
-import '/categories/firstAid.dart';
-import '/categories/tsunamis.dart';
-import '/categories/volcanoes.dart';
 
 class StatelessWidget {
   launchURL(String url) async {
@@ -27,7 +19,7 @@ class EmergencyCallNavPage extends StatefulWidget {
 
 class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
 
-  late YoutubePlayerController controller;
+  //late YoutubePlayerController controller;
   @override
   // void initState() {
   //   super.initState();
@@ -59,12 +51,12 @@ class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
   //   super.dispose();
   // }
 
-  bool _isPressed = false;
-  void _myCallback() {
-    setState(() {
-      _isPressed = true;
-    });
-  }
+  // bool _isPressed = false;
+  // void _myCallback() {
+  //   setState(() {
+  //     _isPressed = true;
+  //   });
+  // }
 
   List<String> mainDataList = [
     "NDDMRC",
@@ -128,13 +120,13 @@ class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
                         onTap: () {
                           setState(() {
                              
-                             launch('tel:'+numberList[index]);
+                             launch('tel:${numberList[index]}');
                           });
                         },
                         child: Ink.image(
                             width: 50,
                             height: 50,
-                            image: AssetImage('images/volcano_img/Telephone.png'),
+                            image: const AssetImage('images/volcano_img/Telephone.png'),
                         ),
                       ),
                       const SizedBox(width: 10),
@@ -155,10 +147,10 @@ class _EmergencyCallNavPageState extends State<EmergencyCallNavPage> {
                     itemBuilder: (context, index) {
                       return Card(
                         child: Row(
-                          children: [
-                            const SizedBox(width: 10),
+                          children: const [
+                            SizedBox(width: 10),
                             
-                            const SizedBox(width: 10),
+                            SizedBox(width: 10),
                           ],
                         ),
                       );

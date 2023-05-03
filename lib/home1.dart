@@ -1,6 +1,4 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:project1/navigate.dart';
 import 'categories/tsunamis.dart';
 import 'categories/volcanoes.dart';
 import 'categories/earthquakes.dart';
@@ -50,6 +48,11 @@ class _Home_1State extends State<Home_1> {
                   ),
                   child: GridView(
                     physics: const BouncingScrollPhysics(),
+                    gridDelegate:
+                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            crossAxisCount: 1,
+                            crossAxisSpacing: 15,
+                            mainAxisExtent: 175),
                     children: [
                       GestureDetector(
                       onTap: () {
@@ -61,8 +64,8 @@ class _Home_1State extends State<Home_1> {
                       },
                         child :
                         Container(
-                          decoration: BoxDecoration(
-                              color: const Color.fromRGBO(249, 238, 223, 1),
+                          decoration: const BoxDecoration(
+                              color: Color.fromRGBO(249, 238, 223, 1),
                               borderRadius: BorderRadius.all(Radius.circular(10))),
                           padding: const EdgeInsets.all(15),
                           margin: const EdgeInsets.all(25),
@@ -72,7 +75,7 @@ class _Home_1State extends State<Home_1> {
                                 width: 100,
                                 height: 100,
                                 decoration: BoxDecoration(
-                                  image: DecorationImage(
+                                  image: const DecorationImage(
                                     image:
                                     AssetImage('images/home_icon/firstAid.png'),
                                     fit: BoxFit.cover,
@@ -101,8 +104,8 @@ class _Home_1State extends State<Home_1> {
                         },
                         child :
                         Container(
-                            decoration: BoxDecoration(
-                                color: const Color.fromRGBO(249, 238, 223, 1),
+                            decoration: const BoxDecoration(
+                                color: Color.fromRGBO(249, 238, 223, 1),
                                 borderRadius: BorderRadius.all(Radius.circular(10))),
                             padding: const EdgeInsets.all(15),
                             margin: const EdgeInsets.all(25),
@@ -112,7 +115,7 @@ class _Home_1State extends State<Home_1> {
                                   width: 100,
                                   height: 100,
                                   decoration: BoxDecoration(
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image:
                                       AssetImage('images/home_icon/earthquakes.png'),
                                       fit: BoxFit.cover,
@@ -124,7 +127,7 @@ class _Home_1State extends State<Home_1> {
                                 const Expanded(
                                   child: Text(
                                     'Earthquakes',
-                                    style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,),
+                                    style: TextStyle(fontSize: 28,fontWeight: FontWeight.bold,),
                                   ),
                                 ),
                               ],
@@ -141,8 +144,8 @@ class _Home_1State extends State<Home_1> {
                         },
                         child :
                         Container(
-                            decoration: BoxDecoration(
-                                color: const Color.fromRGBO(249, 238, 223, 1),
+                            decoration: const BoxDecoration(
+                                color: Color.fromRGBO(249, 238, 223, 1),
                                 borderRadius: BorderRadius.all(Radius.circular(10))),
                             padding: const EdgeInsets.all(15),
                             margin: const EdgeInsets.all(25),
@@ -152,7 +155,7 @@ class _Home_1State extends State<Home_1> {
                                   width: 100,
                                   height: 100,
                                   decoration: BoxDecoration(
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image:
                                       AssetImage('images/home_icon/tsunamis.png'),
                                       fit: BoxFit.cover,
@@ -181,8 +184,8 @@ class _Home_1State extends State<Home_1> {
                         },
                         child :
                         Container(
-                            decoration: BoxDecoration(
-                                color: const Color.fromRGBO(249, 238, 223, 1),
+                            decoration: const BoxDecoration(
+                                color: Color.fromRGBO(249, 238, 223, 1),
                                 borderRadius: BorderRadius.all(Radius.circular(10))),
                             padding: const EdgeInsets.all(15),
                             margin: const EdgeInsets.all(25),
@@ -192,7 +195,7 @@ class _Home_1State extends State<Home_1> {
                                   width: 100,
                                   height: 100,
                                   decoration: BoxDecoration(
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image:
                                       AssetImage('images/home_icon/volcano.png'),
                                       fit: BoxFit.cover,
@@ -221,8 +224,8 @@ class _Home_1State extends State<Home_1> {
                         },
                         child :
                         Container(
-                            decoration: BoxDecoration(
-                                color: const Color.fromRGBO(249, 238, 223, 1),
+                            decoration: const BoxDecoration(
+                                color: Color.fromRGBO(249, 238, 223, 1),
                                 borderRadius: BorderRadius.all(Radius.circular(10))),
                             padding: const EdgeInsets.all(15),
                             margin: const EdgeInsets.all(25),
@@ -232,7 +235,7 @@ class _Home_1State extends State<Home_1> {
                                   width: 100,
                                   height: 100,
                                   decoration: BoxDecoration(
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image:
                                       AssetImage('images/home_icon/emergencyCall.png'),
                                       fit: BoxFit.cover,
@@ -252,11 +255,6 @@ class _Home_1State extends State<Home_1> {
                         ),
                       ),
                     ],
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 1,
-                            crossAxisSpacing: 15,
-                            mainAxisExtent: 175),
                   ),
                 )
               ],

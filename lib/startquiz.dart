@@ -14,7 +14,7 @@ class StartQuiz extends StatelessWidget {
         body: SingleChildScrollView(
             child: Stack(children: <Widget>[
           Container(
-              height: 1800,
+              height: 700,
               width: double.infinity,
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -22,27 +22,27 @@ class StartQuiz extends StatelessWidget {
                     const SizedBox(height: 50),
                     Container(
                       width: 400,
-                      height: 200,
-                      margin: EdgeInsets.symmetric(horizontal: 50),
-                      padding: EdgeInsets.all(20),
-                      child: Text(
+                      height: 150,
+                      margin: const EdgeInsets.symmetric(horizontal: 50),
+                      padding: const EdgeInsets.all(20),
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(243, 127, 87, 0.9),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: const Text(
                         'First - Aid Quiz',
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             color: Color.fromARGB(255, 248, 248, 248),
-                            fontSize: 70,
+                            fontSize: 50,
                             fontWeight: FontWeight.bold),
-                      ),
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(243, 127, 87, 0.9),
-                        borderRadius: BorderRadius.circular(10),
                       ),
                     ),
                     const SizedBox(height: 10),
                     Image.asset('images/quiz_assets/quizStart.png',
-                        width: 300, height: 400),
+                        width: 200, height: 300),
                     const SizedBox(height: 10),
-                    Text(
+                    const Text(
                       '16 - Questions',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -62,16 +62,16 @@ class StartQuiz extends StatelessWidget {
                           );
                         },
                         style: ElevatedButton.styleFrom(
-                          primary: Color.fromRGBO(250, 69, 80, 1),
-                          padding: const EdgeInsets.all(15),
+                          primary: const Color.fromRGBO(255,99,71,1),
+                          padding: const EdgeInsets.only(left: 100,right: 100, top: 15, bottom: 15),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50),
                           ),
                         ),
                         child: const Text(
-                          'Start the Quiz',
+                          'Start',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontSize: 17,
                             fontWeight: FontWeight.bold,
                           ),

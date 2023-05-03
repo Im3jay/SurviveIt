@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
@@ -25,9 +23,6 @@ class FirstAidNavPage extends StatefulWidget {
 
 class _FirstAidNavPageState extends State<FirstAidNavPage> {
   late YoutubePlayerController controller;
-  static final expanded_text2 = ' ';
-
-  static final expanded_text = ' ';
   @override
   void initState() {
     super.initState();
@@ -69,6 +64,15 @@ class _FirstAidNavPageState extends State<FirstAidNavPage> {
             title: const Text(' First-Aid'),
             centerTitle: true,
             backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
+            actions: <Widget>[
+              IconButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => search()));
+                },
+                icon: const Icon(Icons.search),
+              )
+            ],
           ),
           body: ListView(
             shrinkWrap: true,
@@ -107,7 +111,7 @@ class _FirstAidNavPageState extends State<FirstAidNavPage> {
                             spreadRadius: 1.0,
                           )
                         ],
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage('images/first_aid/bandAid.png'),
                           fit: BoxFit.cover,
                         ),
@@ -148,7 +152,7 @@ class _FirstAidNavPageState extends State<FirstAidNavPage> {
                             spreadRadius: 1.0,
                           )
                         ],
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage('images/first_aid/safetyPin.png'),
                           fit: BoxFit.cover,
                         ),
@@ -230,7 +234,7 @@ class _FirstAidNavPageState extends State<FirstAidNavPage> {
                             spreadRadius: 1.0,
                           )
                         ],
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage('images/first_aid/flashlight.png'),
                           fit: BoxFit.cover,
                         ),
@@ -271,7 +275,7 @@ class _FirstAidNavPageState extends State<FirstAidNavPage> {
                             spreadRadius: 1.0,
                           )
                         ],
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage('images/first_aid/gauze.png'),
                           fit: BoxFit.cover,
                         ),
@@ -312,7 +316,7 @@ class _FirstAidNavPageState extends State<FirstAidNavPage> {
                             spreadRadius: 1.0,
                           )
                         ],
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage('images/first_aid/aspirin.png'),
                           fit: BoxFit.cover,
                         ),
@@ -353,7 +357,7 @@ class _FirstAidNavPageState extends State<FirstAidNavPage> {
                             spreadRadius: 1.0,
                           )
                         ],
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: AssetImage('images/first_aid/ointment.png'),
                           fit: BoxFit.cover,
                         ),

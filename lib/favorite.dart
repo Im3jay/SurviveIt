@@ -129,43 +129,43 @@ class _FavoritePageState extends State<FavoritePage> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => const EarthquakePage()));
+                                          builder: (context) => const FirstAidPage()));
                                 } else if (favoriteDataList[index] == "Earthquakes") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => const VolcanoesPage()));
+                                          builder: (context) => const EarthquakePage()));
                                 } else if (favoriteDataList[index] ==
                                     "Volcanoes") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const EmergencyCallPage()));
+                                              const VolcanoesPage()));
                                 } else if (favoriteDataList[index] ==
                                     "Tsunamis") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context) => const FirstAidPage()));
+                                          builder: (context) => const TsunamisPage()));
                                 } else if (favoriteDataList[index] == "Emergency Call") {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              const TsunamisPage()));
+                                              const EmergencyCallPage()));
                                 }
                               },
                               style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all<Color>(
-                                  Color.fromRGBO(153,114,69,1),
+                                  const Color.fromRGBO(153,114,69,1),
                                 ),
                               ),
                               child: Column(
                                 // Replace with a Row for horizontal icon + text
-                                children: <Widget>[
-                                  const Icon(
+                                children: const <Widget>[
+                                  Icon(
                                     Icons.call_made_rounded,
                                     color: Colors.white,
                                   ),

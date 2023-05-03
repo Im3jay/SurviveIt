@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project1/welcome.dart';
 
-
 class Question {
   String question;
   List<String> answerOptions;
@@ -26,10 +25,10 @@ class _QuizPageState extends State<QuizPage> {
   int _currentQuestionIndex = 0;
   int correct_answers = 0;
 
-  List<Question> _questionList = [
+  final List<Question> _questionList = [
     Question(
         question: ' Is an instrument that measures temperature. ',
-        answerOptions: ['thermometer', 'hammer', 'stethoscope', 'injection'],
+        answerOptions: ['Thermometer', 'Hammer', 'Stethoscope', 'Injection'],
         correctAnswer: 'thermometer',
         imageName: 'firstAid'),
     Question(
@@ -68,7 +67,7 @@ class _QuizPageState extends State<QuizPage> {
     Question(
         question:
             'It is a small ball of soft material that can be used for a variety of purposes (such as removing makeup or cleaning a wound)',
-        answerOptions: ['dirty sock', 'earphones', 'apron', 'cotton'],
+        answerOptions: ['Dirty sock', 'Earphones', 'Apron', 'Cotton'],
         correctAnswer: 'cotton',
         imageName: 'firstAid'),
     Question(
@@ -172,9 +171,9 @@ class _QuizPageState extends State<QuizPage> {
         context: context,
         builder: (BuildContext context) {
           return AlertDialog(
-            title: Text('Congratulations!'),
+            title: const Text('Congratulations!'),
             content: Text(
-                'You have completed the quiz. You got a total of: ${correct_answers} correct!!'),
+                'You have completed the quiz. You got a total of: $correct_answers correct!!'),
             actions: <Widget>[
               TextButton(
                 onPressed: () {
@@ -183,7 +182,7 @@ class _QuizPageState extends State<QuizPage> {
                     MaterialPageRoute(builder: (context) => WelcomePage()),
                   );
                 },
-                child: Text('OK'),
+                child: const Text('OK'),
               ),
             ],
           );
@@ -200,7 +199,7 @@ class _QuizPageState extends State<QuizPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quiz App'),
+        title: const Text('Quiz App'),
         centerTitle: true,
         backgroundColor: const Color.fromRGBO(255, 191, 116, 1),
       ),
@@ -208,56 +207,75 @@ class _QuizPageState extends State<QuizPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              'Question ${_currentQuestionIndex}',
-              style: TextStyle(
-                  color: Color.fromRGBO(255, 138, 0, 1),
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold),
+            Container(
+              margin: const EdgeInsets.only(left: 25, right: 25),
+              decoration: BoxDecoration(
+                color: const Color.fromRGBO(255, 224, 178, 1),
+                borderRadius: BorderRadius.circular(20),
+              ),
+              //color: Color.fromRGBO(255, 224, 178, 1),
+              child: Column(
+                children: <Widget>[
+                  const SizedBox(height: 20),
+                  Text(
+                    'Question $_currentQuestionIndex',
+                    style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(height: 20),
+                  Text(
+                    'Total Score: $correct_answers/16',
+                    style: const TextStyle(
+                        color: Color.fromARGB(255, 0, 0, 0),
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Image.asset(
+                    "images/quiz_assets/${_questionList[_currentQuestionIndex].imageName}.png",
+                    height: 70,
+                    width: 70,
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Padding(
+                      padding:
+                          const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+                      child: Text(
+                        _questionList[_currentQuestionIndex].question,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          color: Color.fromARGB(255, 0, 0, 0),
+                          fontSize: 20,
+                        ),
+                      )),
+                      const SizedBox(height: 20),
+                ],
+              ),
             ),
-            Text(
-              'Total Score: ${correct_answers}/16',
-              style: TextStyle(
-                  color: Color.fromARGB(255, 0, 0, 0),
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Image.asset(
-              "images/quiz_assets/${_questionList[_currentQuestionIndex].imageName}.png",
-              height: 70,
-              width: 70,
-            ),
-            Padding(
-                padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
-                child: Text(
-                  _questionList[_currentQuestionIndex].question,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold),
-                )),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ListView.builder(
               shrinkWrap: true,
               itemCount: answerOptions.length,
               itemBuilder: (BuildContext context, int index) {
                 return Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
                     child: ElevatedButton(
                       style: ButtonStyle(
                         backgroundColor: MaterialStateProperty.all<Color>(
-                            Color.fromRGBO(255, 138, 0, 1)),
+                            const Color.fromRGBO(249,238,223,1)),
                       ),
                       onPressed: () => _answerQuestion(answerOptions[index]),
                       child: Text(
                         answerOptions[index],
                         textAlign: TextAlign.center,
-                        style: TextStyle(
-                            color: Color.fromARGB(255, 255, 255, 255),
+                        style: const TextStyle(
+                            color: Colors.black,
                             fontSize: 15,
                             fontWeight: FontWeight.bold),
                       ),
