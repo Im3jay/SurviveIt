@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import '../../home_1.dart';
-import '../../search.dart';
+import '../../home1.dart';
 import 'nav/emergencyCall1.dart';
 import '../../favorite.dart';
 
@@ -12,7 +11,7 @@ class EmergencyCallPage extends StatefulWidget {
 }
 
 class _EmergencyCallPageState extends State<EmergencyCallPage> {
-  //python = 7
+  
 
   int _selectedIndex = 2;
   final List<Widget> _widgetOptions = [
@@ -41,10 +40,10 @@ class _EmergencyCallPageState extends State<EmergencyCallPage> {
           backgroundColor: Colors.white,
           color: const Color.fromRGBO(255, 191, 116, 1),
           animationDuration: const Duration(milliseconds: 300),
-          items: [
-            const Icon(Icons.home, color: Colors.white),
-            const Icon(Icons.favorite, color: Colors.white),
-            const Icon(Icons.assistant, color: Colors.white),
+          items: const [
+            Icon(Icons.home, color: Colors.white),
+            Icon(Icons.favorite, color: Colors.white),
+            Icon(Icons.assistant, color: Colors.white),
           ]),
     );
   }

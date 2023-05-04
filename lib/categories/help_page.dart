@@ -37,7 +37,7 @@ class HelpPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Container(
-                  margin: EdgeInsets.only(left: 30, right: 30),
+                  margin: const EdgeInsets.only(left: 30, right: 30),
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                     color: const Color.fromRGBO(255, 191, 116, 1),
@@ -56,7 +56,7 @@ class HelpPage extends StatelessWidget {
                       ),
                       TextField(
                         controller: feedback,
-                        decoration: InputDecoration(
+                        decoration: const InputDecoration(
                           filled: true,
                           fillColor: Colors.white,
                           labelText: 'Type here',
@@ -118,7 +118,7 @@ class HelpPage extends StatelessWidget {
                 ),
                 const SizedBox(height: 20),
                 Container(
-                  margin: EdgeInsets.only(left: 30, right: 30),
+                  margin: const EdgeInsets.only(left: 30, right: 30),
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                     color: const Color.fromRGBO(255, 224, 178, 1),

@@ -244,6 +244,7 @@ class _QuizPageState extends State<QuizPage> {
                     height: 20,
                   ),
                   Padding(
+                    
                       padding:
                           const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
                       child: Text(
@@ -262,11 +263,23 @@ class _QuizPageState extends State<QuizPage> {
             ListView.builder(
               shrinkWrap: true,
               itemCount: answerOptions.length,
+              
               itemBuilder: (BuildContext context, int index) {
-                return Padding(
+                return Container(
+                    margin: EdgeInsets.only(left: 10, right: 10),
                     padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+                    
                     child: ElevatedButton(
+                      
                       style: ButtonStyle(
+                        shape: MaterialStateProperty.all(
+      RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(5),
+        side: BorderSide(width: 3, color: Colors.transparent),
+      ),
+    ),
+                        padding: MaterialStateProperty.all<EdgeInsets>(
+            EdgeInsets.all(13)),
                         backgroundColor: MaterialStateProperty.all<Color>(
                             const Color.fromRGBO(249,238,223,1)),
                       ),
@@ -276,9 +289,10 @@ class _QuizPageState extends State<QuizPage> {
                         textAlign: TextAlign.center,
                         style: const TextStyle(
                             color: Colors.black,
-                            fontSize: 15,
+                            fontSize: 16,
                             fontWeight: FontWeight.bold),
                       ),
+                    
                     ));
               },
             ),

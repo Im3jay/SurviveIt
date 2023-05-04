@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import '../../home_1.dart';
-import '../../search.dart';
+import '../../home1.dart';
 import 'nav/firstAid1.dart';
 import '../../favorite.dart';
 
