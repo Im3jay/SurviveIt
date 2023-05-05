@@ -29,7 +29,7 @@ class _QuizPageState extends State<QuizPage> {
     Question(
         question: ' Is an instrument that measures temperature. ',
         answerOptions: ['Thermometer', 'Hammer', 'Stethoscope', 'Injection'],
-        correctAnswer: 'thermometer',
+        correctAnswer: 'Thermometer',
         imageName: 'firstAid'),
     Question(
         question:
@@ -68,7 +68,7 @@ class _QuizPageState extends State<QuizPage> {
         question:
             'It is a small ball of soft material that can be used for a variety of purposes (such as removing makeup or cleaning a wound)',
         answerOptions: ['Dirty sock', 'Earphones', 'Apron', 'Cotton'],
-        correctAnswer: 'cotton',
+        correctAnswer: 'Cotton',
         imageName: 'firstAid'),
     Question(
         question: 'See a sudden rise or fall of the ocean',
@@ -172,8 +172,21 @@ class _QuizPageState extends State<QuizPage> {
         builder: (BuildContext context) {
           return AlertDialog(
             title: const Text('Congratulations!'),
-            content: Text(
-                'You have completed the quiz. You got a total of: $correct_answers correct!!'),
+            content:
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Image.asset(
+                  'images/Logo.png',
+                  height: 100,
+                  width: 100,
+                ),
+                const SizedBox(height: 16),
+                Text(
+                  'You have completed the quiz. \n You got a total of: $correct_answers correct!',
+                ),
+              ],
+            ),
             actions: <Widget>[
               TextButton(
                 onPressed: () {
